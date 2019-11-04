@@ -1,0 +1,23 @@
+webshop fietsen / onderdelen / acessoires
+
+user stories
+
+home - login/registreer dan pas krijg gelikete / profiel /winkelwagen
+logo gecentreerd boven aan
+zoeken onderaan de slider 
+
+
+- alle categorien
+categorien - > image die erbij past
+
+
+merken -> image -> bij sorteren bovenaan in header
+	-> types die het verkoopt
+
+
+items heeft standard prijs - kortingpercentage(niet verplicht)
+alles meer dan 20 % - > outlet
+
+
+algemeen:
+ cookies zwarte balk op wit 
