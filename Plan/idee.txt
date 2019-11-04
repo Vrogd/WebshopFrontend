@@ -4,7 +4,8 @@ user stories
 
 home - login/registreer dan pas krijg gelikete / profiel /winkelwagen
 logo gecentreerd boven aan
-zoeken onderaan de slider 
+zoeken onderaan de slider of links 
+filters / zoeken overloop op slider
 
 
 - alle categorien
@@ -17,6 +18,14 @@ merken -> image -> bij sorteren bovenaan in header
 
 items heeft standard prijs - kortingpercentage(niet verplicht)
 alles meer dan 20 % - > outlet
+- toegevoegd
+- merk
+- prijs
+- kortingpercentage
+- kleur
+- afbeelding(en)
+- specficaties
+- user die het toegevoeg heeft
 
 
 algemeen:
