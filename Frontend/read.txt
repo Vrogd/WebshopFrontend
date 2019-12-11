@@ -10,3 +10,16 @@ import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 npm install --save-dev @fortawesome/fontawesome-free
+
+
+
+
+npm install
+npm install -g npm-check-updates
+npm audit -> 0 vulnerbalities
+ncu -u
+
+
+npm install --save-dev @fortawesome/fontawesome-free
+
+--save-dev  -D voor developpment
