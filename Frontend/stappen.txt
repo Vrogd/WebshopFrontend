@@ -1,0 +1,9 @@
+npm install
+npm install -g npm-check-updates 
+npm audit -> 0 vulnerbalities
+ncu -u
+
+
+npm install --save-dev @fortawesome/fontawesome-free
+
+--save-dev  -D voor developpment

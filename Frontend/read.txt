@@ -1,0 +1,12 @@
+npm audit fix
+
+
+npm i -D postcss-loader autoprefixer
+
+font awesome
+
+import '@fortawesome/fontawesome-free/js/fontawesome'
+import '@fortawesome/fontawesome-free/js/solid'
+import '@fortawesome/fontawesome-free/js/regular'
+import '@fortawesome/fontawesome-free/js/brands'
+npm install --save-dev @fortawesome/fontawesome-free
