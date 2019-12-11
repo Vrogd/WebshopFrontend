@@ -1,17 +1,17 @@
 @import './fonts.scss';
 body{
-  padding: 50px;
-  background: red;
-  font-weight: 700;
+  background-color: grey;
 }
 
-.wrapper{
-  margin: 0 auto;
-  .img-wrapper{
-    height: 260px;
-  }
-  .card-text{
-    height: 74px;
-    overflow: hidden;
-  }
+@include media-breakpoint-up(sm) {
+
+}
+@include media-breakpoint-up(md) {
+
+}
+@include media-breakpoint-up(lg) {
+
+}
+@include media-breakpoint-up(xl) {
+
 }
