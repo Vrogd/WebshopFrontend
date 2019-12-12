@@ -1,6 +1,23 @@
 @import './fonts.scss';
+@import './hamburger';
 @import "../vendor/variables";
+
 body{
-  background-color: $red-light;
+  max-width: $width-lay;
+  font-size: $def-font-size !important;
+  box-sizing: border-box;
+  .navbar{
+    background-color: $dark-blue !important;
+    .navbar-toggler{
+      border: none;
+      outline: none;
+      color: white;
+    }
+  }
+  .icon{
+    font-size: $iconsize;
+    color: $white;
+  }
 }
 
+@import "./default";

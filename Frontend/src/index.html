@@ -9,8 +9,68 @@
 
 
 </head>
-<body>
-<h3>test</h3>
+<body class="mx-auto">
+<div id="nav" class="pos-f-t position-relative">
+    <nav class="navbar navbar-dark bg-light p-0 align-items-stretch">
+        <div class="col-lg-2 col-md-4 align-items-stretch d-flex justify-content-lg-center">
+            <div class="row align-items-stretch justify-content-lg-center">
+                    <button class="navbar-toggler col-md-auto px-4 borderleft" type="button" data-toggle="collapse" data-target="#navbarToggleExternalSearch" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-search icon"></i>
+                    </button>
+                    <button class="navbar-toggler col-md-auto px-4 borderleft borderright" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="hamburger">
+                            <span class="hamburger__line"></span>
+                            <span class="hamburger__line"></span>
+                            <span class="hamburger__line"></span>
+                        </div>
+                    </button>
+            </div>
+
+        </div>
+        <div id="nav_logo" class="col-lg-4">
+            <h2>logo</h2>
+        </div>
+        <div class="col-lg-2 col-md-4 align-items-stretch d-flex">
+            <div class="row align-self-lg-stretch justify-content-lg-center">
+                <button class="navbar-toggler col-md-auto px-4 borderleft" type="button" data-toggle="collapse" data-target="#navbarToggleExternalprofile" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-user-alt"></i>
+                </button>
+                <button class="navbar-toggler col-md-auto px-4 borderleft">
+                    <i class="fas fa-heart icon align-middle"></i>
+                </button>
+                <button class="navbar-toggler col-md-auto px-4 borderleft borderright">
+                    <i class="fas fa-shopping-cart icon"></i>
+                </button>
+
+
+            </div>
+
+        </div>
+    </nav>
+    <div class="position-absolute w-100">
+        <div class="collapse " id="navbarToggleExternalSearch">
+            <div class="bg-dark">
+                <h4 class="text-white">search</h4>
+                <span class="text-muted">Toggleable via the navbar brand.</span>
+            </div>
+        </div>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h4 class="text-white">menu</h4>>
+            </div>
+        </div>
+    </div>
+    <div class="collapse position-absolute w-100" id="navbarToggleExternalprofile">
+        <div class="bg-dark p-4">
+            <h4 class="text-white">profile</h4>>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div>
+    test
+    </div>
+</div>
 
 </body>
 </html>
