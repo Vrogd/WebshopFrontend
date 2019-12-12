@@ -1,17 +1,6 @@
 @import './fonts.scss';
+@import "../vendor/variables";
 body{
-  background-color: grey;
+  background-color: $red-light;
 }
 
-@include media-breakpoint-up(sm) {
-
-}
-@include media-breakpoint-up(md) {
-
-}
-@include media-breakpoint-up(lg) {
-
-}
-@include media-breakpoint-up(xl) {
-
-}

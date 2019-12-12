@@ -1,8 +1,8 @@
 /**lokale fonts**/
 $fontface-path:'../fonts';
 @font-face {
-  //font-family: pfr;
-  //src: url('#{$fontface-path}/PlayfairDisplay-Regular.ttf');
+  font-family: pfr;
+  src: url('#{$fontface-path}/PlayfairDisplay-Regular.ttf');
 }
 $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';

@@ -1,4 +1,4 @@
-
+npm audit fix
 
 
 npm i -D postcss-loader autoprefixer
@@ -12,12 +12,12 @@ import '@fortawesome/fontawesome-free/js/brands'
 npm install --save-dev @fortawesome/fontawesome-free
 
 
------------------------------------------------------------------
 
+--
 
 npm install
 npm install -g npm-check-updates
-npm audit / npm audit fix-> 0 vulnerbalities
+npm audit -> 0 vulnerbalities
 ncu -u
 
 
