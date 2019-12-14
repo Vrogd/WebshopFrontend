@@ -1,9 +1,14 @@
 button{
   border-radius: 0 !important;
 }
-.borderleft{
-  border-left: $med-blue solid 2px !important;
+@include media-breakpoint-up(sm) {  }
+@include media-breakpoint-up(md) {
+  .borderleft{
+    border-left: $med-blue solid 2px !important;
+  }
+  .borderright{
+    border-right: $med-blue solid 2px !important;
+  }
 }
-.borderright{
-  border-right: $med-blue solid 2px !important;
-}
+@include media-breakpoint-up(lg) {  }
+@include media-breakpoint-up(xl) {  }

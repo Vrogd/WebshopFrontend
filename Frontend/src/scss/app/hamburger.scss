@@ -46,7 +46,7 @@ $hamburger-line-border-radius: 4px;
     top: ($hamburger-height / 2 - ($hamburger-line-height / 2))*2;
   }
 }
-button[aria-expanded="true"] .hamburger__line{
+#nav-men[aria-expanded="true"] .hamburger__line{
   background-color: #42DCA3;
   &:nth-child(1) {
       top: $hamburger-height / 2 - ($hamburger-line-height / 2);
