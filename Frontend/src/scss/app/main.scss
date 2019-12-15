@@ -4,10 +4,10 @@
 
 body{
   max-width: $width-lay;
-  font-size: $def-font-size !important;
+  font-size: $def-font-size;
   box-sizing: border-box;
   .navbar{
-    background-color: $dark-blue !important;
+    background-color: rgba($dark-blue,0.8) !important;
     .navbar-toggler{
       border: none;
       outline: none;
@@ -15,7 +15,6 @@ body{
     }
   }
   .icon{
-    font-size: $iconsize;
     color: $white;
   }
 }
