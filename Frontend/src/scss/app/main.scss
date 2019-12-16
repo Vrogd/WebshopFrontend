@@ -1,22 +1,29 @@
 @import './fonts.scss';
 @import './hamburger';
 @import "../vendor/variables";
-
+@import "./default";
 body{
+  font-family: $font-main,sans-serif ;
   max-width: $width-lay;
+  min-width: 330px;
   font-size: $def-font-size;
   box-sizing: border-box;
   .navbar{
-    background-color: rgba($dark-blue,0.8) !important;
+    background-color: $dark-blue !important;
     .navbar-toggler{
       border: none;
       outline: none;
-      color: white;
+      color: $font-c-w;
+    }
+    .badge{
+      font-size: 0.9rem;
+      font-weight: $semibold;
+      background-color: $red-light;
+      color: $font-c-w;
     }
   }
   .icon{
-    color: $white;
+    color: $font-c-w;
   }
 }
 
-@import "./default";

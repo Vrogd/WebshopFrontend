@@ -2,18 +2,24 @@ button{
   border-radius: 0 !important;
 }
 .icon{
-  font-size: $iconsize*0.7;
+  font-size: $iconsize*0.62;
+}
+.badge{
+  top: $topspacing-numbericon*2.2;
 }
 @include media-breakpoint-up(sm) {
-  font-size: $def-font-size*0.8;
+  font-size: $def-font-size*0.70;
   .icon{
-    font-size: $iconsize*0.8;
+    font-size: $iconsize*0.70;
   }
 }
 @include media-breakpoint-up(md) {
-  font-size: $def-font-size*0.9 !important;
+  font-size: $def-font-size*0.75 !important;
+  .badge{
+    top: $topspacing-numbericon*4;
+  }
   .icon{
-    font-size: $iconsize*0.9;
+    font-size: $iconsize*0.75;
   }
   .borderleft{
     border-left: $med-blue solid 2px !important;
@@ -23,8 +29,11 @@ button{
   }
 }
 @include media-breakpoint-up(lg) {
+  .badge{
+    top: $topspacing-numbericon*4.5;
+  }
   .icon{
-    font-size: $iconsize;
+    font-size: $iconsize *0.8;
   }
 }
 @include media-breakpoint-up(xl) {  }

@@ -12,12 +12,12 @@
 <body class="mx-auto">
 <div id="nav" class="pos-f-t position-relative">
     <nav class="navbar navbar-dark bg-light p-0 align-items-stretch justify-content-start">
-        <div class="col-lg-2 col-md-4 col-12 align-items-stretch d-flex justify-content-lg-center order-3 order-md-1">
-            <div class="row align-items-stretch justify-content-lg-center">
-                    <button id="nav-search" class="navbar-toggler col-md-auto px-4 borderleft" type="button" data-toggle="collapse" data-target="#navbarToggleExternalSearch" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div id="nav-left" class="col-lg-2 col-md-3 col-5 align-items-stretch d-flex justify-content-lg-center order-2 order-md-1 my-2 my-md-0">
+            <div class=" row px-lg-0 px-xl-4 align-items-stretch justify-content-lg-center justify-content-between mx-auto mx-md-0">
+                    <button id="nav-search" class="navbar-toggler col-6 px-4 borderleft" type="button" data-toggle="collapse" data-target="#navbarToggleExternalSearch" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-search icon"></i>
                     </button>
-                    <button id="nav-men" class="navbar-toggler col-md-auto px-4 borderleft borderright" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button id="nav-men" class="navbar-toggler col-6 px-4 borderleft borderright" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <div class="hamburger">
                             <span class="hamburger__line"></span>
                             <span class="hamburger__line"></span>
@@ -27,19 +27,19 @@
             </div>
 
         </div>
-        <a class="navbar-brand offset-lg-2 offset-md-0 mr-0 col-lg-4 col-md-4 col-12 order-1 order-md-2 text-center" href="#">
+        <a class="navbar-brand offset-lg-2 offset-md-1 mr-0 col-lg-4 col-md-4 col-12 order-2 order-md-2 text-center mb-4 mb-md-0" href="#">
             <img class="" src="images/logo.png" alt="logo">
         </a>
-        <div class="col-lg-3 offset-lg-1 offset-md-0 col-md-4 col-md-auto align-items-stretch d-flex justify-content-start justify-content-md-end order-2 order-md-2 ">
-            <div class="row align-self-lg-stretch justify-content-lg-center">
-                <button class="navbar-toggler col-md-auto px-4 borderleft" type="button" data-toggle="collapse" data-target="#navbarToggleExternalprofile" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-user-alt"></i>
+        <div id="nav-right" class="col-lg-3 offset-lg-1 offset-md-0 col-md-4 col-7 align-items-stretch d-flex justify-content-start justify-content-md-end order-1 order-md-2 pb-4 pt-2 pb-md-0 pt-md-0 ">
+            <div class="row align-self-stretch justify-content-center mx-md-auto">
+                <button class="navbar-toggler col-auto px-4 borderleft" type="button" data-toggle="collapse" data-target="#navbarToggleExternalprofile" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-user-alt icon"></i>
                 </button>
-                <button class="navbar-toggler col-md-auto px-4 borderleft">
-                    <i class="fas fa-heart icon align-middle"></i>
+                <button class="navbar-toggler col-auto px-4 borderleft" type="button" formaction="#">
+                    <i class="fas fa-heart icon"></i><span class="badge rounded-circle badge-light position-absolute">4</span>
                 </button>
-                <button class="navbar-toggler col-md-auto px-4 borderleft borderright">
-                    <i class="fas fa-shopping-cart icon"></i>
+                <button class="navbar-toggler col-auto px-4 borderleft borderright" type="button" formaction="/test.html">
+                    <i class="fas fa-shopping-cart icon"></i><span class="badge rounded-circle badge-light position-absolute">2</span>
                 </button>
 
 
@@ -50,8 +50,10 @@
     <div class="position-absolute w-100">
         <div class="collapse " id="navbarToggleExternalSearch">
             <div class="bg-dark">
-                <h4 class="text-white">search</h4>
-                <span class="text-muted">Toggleable via the navbar brand.</span>
+                <form class="form-inline my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
             </div>
         </div>
         <div class="collapse" id="navbarToggleExternalContent">
