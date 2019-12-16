@@ -1,39 +1,70 @@
-button{
-  border-radius: 0 !important;
-}
-.icon{
-  font-size: $iconsize*0.62;
-}
-.badge{
-  top: $topspacing-numbericon*2.2;
-}
-@include media-breakpoint-up(sm) {
-  font-size: $def-font-size*0.70;
-  .icon{
-    font-size: $iconsize*0.70;
+body{
+  button{
+    border-radius: 0 !important;
   }
-}
-@include media-breakpoint-up(md) {
-  font-size: $def-font-size*0.75 !important;
+  .icon{
+    font-size: $iconsize*0.62;
+  }
+  h2,h3{
+    font-weight: $semibold;
+  }
+  h2{
+    font-size: 1.4rem;
+  }
+  h3{
+    font-size: 1.2rem;
+  }
+  .highlight-link{
+    a{
+      font-size: 1.1rem;
+      font-weight: $bold;
+    }
+  }
   .badge{
-    top: $topspacing-numbericon*4;
+    top: $topspacing-numbericon;
   }
-  .icon{
-    font-size: $iconsize*0.75;
+  ul{
+    padding: 0;
+    li{
+      list-style: none;
+      a{
+        text-decoration: none !important;
+      }
+      a:hover{
+        color: lighten($red-light,0.5) !important;
+      }
+    }
+  }
+  /* button styles weg doen*/
+  .btn:focus,.btn:active, .btn:visited,.form-control,.form-control:active , .form-control:visited {
+    border:none;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  .bg-med-blue{
+    background-color: rgba($med-blue,0.7) !important;
+  }
+}
+@media (min-width: 576px) {  }
+
+@media (min-width: 768px) {
+  .badge{
+    top: ($topspacing-numbericon * 2) !important;
   }
   .borderleft{
-    border-left: $med-blue solid 2px !important;
+    border-left: solid rgba($blue-medio,0.7) 3px !important;
   }
   .borderright{
-    border-right: $med-blue solid 2px !important;
+    border-right: solid rgba($blue-medio,0.7) 3px !important;
+  }
+  .borderleft-w{
+    border-left: solid rgba($font-c-w,0.7) 2px !important;
+  }
+  .borderright-w{
+    border-right: solid rgba($font-c-w,0.7) 2px !important;
   }
 }
-@include media-breakpoint-up(lg) {
-  .badge{
-    top: $topspacing-numbericon*4.5;
-  }
-  .icon{
-    font-size: $iconsize *0.8;
-  }
-}
-@include media-breakpoint-up(xl) {  }
+
+@media (min-width: 992px) {  }
+
+@media (min-width: 1200px) {  }

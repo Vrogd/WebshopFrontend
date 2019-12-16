@@ -1,6 +1,6 @@
 @import './fonts.scss';
-@import './hamburger';
 @import "../vendor/variables";
+@import './hamburger';
 @import "./default";
 body{
   font-family: $font-main,sans-serif ;
@@ -8,20 +8,52 @@ body{
   min-width: 330px;
   font-size: $def-font-size;
   box-sizing: border-box;
-  .navbar{
-    background-color: $dark-blue !important;
-    .navbar-toggler{
-      border: none;
-      outline: none;
-      color: $font-c-w;
+  color: $font-c-w;
+  #nav{
+    max-width: $width-lay;
+    .navbar{
+      background-color: rgba($dark-blue,0.7) !important;
+
+      button[aria-expanded="true"] i{
+        color: lighten($red-light,0.4);
+      }
+      .navbar-toggler{
+        border: none;
+        outline: none;
+        color: $font-c-w;
+      }
+      .badge{
+        font-size: 0.9rem;
+        font-weight: $semibold;
+        background-color: $red-light;
+        color: $font-c-w;
+      }
+
     }
-    .badge{
+    #navbarToggleExternalContent{
       font-size: 0.9rem;
-      font-weight: $semibold;
-      background-color: $red-light;
-      color: $font-c-w;
+      font-weight: $light;
+      a{
+        color: $font-c-w;
+      }
+    }
+    #navbarToggleExternalSearch{
+      border-top: 2px solid $med-blue;
+      border-bottom: 2px solid $dark-blue;
+      .form-control{
+        background-color: $med-blue !important;
+        color: $font-c-w !important;
+      }
+      .btn{
+        min-width: 80px;
+      }
+      ::-webkit-search-cancel-button{
+        background: white;
+        display: none;
+      }
     }
   }
+
   .icon{
     color: $font-c-w;
   }
