@@ -2,17 +2,33 @@ body{
   button{
     border-radius: 0 !important;
   }
-  .icon{
+  @mixin icon{
     font-size: $iconsize*0.62;
+    color: $font-c-w;
+    text-shadow: 0 0 15px #d35400;
   }
-  h2,h3{
-    font-weight: $semibold;
+  .icon{
+    @include icon;
   }
+  .icon-big{
+    @include icon;
+    font-size: $iconsize;
+    background-color: rgba($dark-blue,0.4);
+    width: $icon-m-size !important;
+    height: $icon-m-size !important;
+    line-height: $icon-m-size;
+    border-radius: 50%;
+  }
+
+
+  /* titles */
   h2{
     font-size: 1.4rem;
+    font-weight: $semibold;
   }
   h3{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: $medium;
   }
   .highlight-link{
     a{
@@ -23,13 +39,18 @@ body{
   .badge{
     top: $topspacing-numbericon;
   }
+  h2:hover,h3:hover{
+
+  }
+
+  /* lists*/
+  a{
+    text-decoration: none !important;
+  }
   ul{
     padding: 0;
     li{
       list-style: none;
-      a{
-        text-decoration: none !important;
-      }
       a:hover{
         color: lighten($red-light,0.5) !important;
       }
@@ -45,6 +66,10 @@ body{
     background-color: rgba($med-blue,0.7) !important;
   }
 }
+
+
+/* breakpoints*/
+
 @media (min-width: 576px) {  }
 
 @media (min-width: 768px) {
@@ -52,16 +77,10 @@ body{
     top: ($topspacing-numbericon * 2) !important;
   }
   .borderleft{
-    border-left: solid rgba($blue-medio,0.7) 3px !important;
+    border-left: solid rgba($blue-medio,0.6) 3px !important;
   }
   .borderright{
-    border-right: solid rgba($blue-medio,0.7) 3px !important;
-  }
-  .borderleft-w{
-    border-left: solid rgba($font-c-w,0.7) 2px !important;
-  }
-  .borderright-w{
-    border-right: solid rgba($font-c-w,0.7) 2px !important;
+    border-right: solid rgba($blue-medio,0.6) 3px !important;
   }
 }
 

@@ -47,6 +47,7 @@
 
         </div>
     </nav>
+    <!--menu en search-->
     <div class="position-absolute w-100">
         <div class="collapse " id="navbarToggleExternalSearch">
             <div class="bg-med-blue">
@@ -58,8 +59,9 @@
         </div>
         <div class="collapse col" id="navbarToggleExternalContent">
             <div class="bg-med-blue row">
-                <div class="col-lg-3 col-md-6 borderright pl-md-4 my-lg-4 my-2">
-                    <h2 class="text-white mb-3">Bikes</h2>
+                <div class="col-lg col-md-6 borderright pl-md-4 my-lg-4 my-2">
+                    <!--type1-->
+                    <a href="#"><h2 class="text-white mb-3 text-uppercase">Bikes</h2></a>
                     <ul>
                         <li><a href="#">Road Fietsen</a></li>
                         <li><a href="#">Road Frames</a></li>
@@ -69,11 +71,12 @@
                         <li><a href="#">Mountainbikes</a></li>
                         <li><a href="#">Electrische Fietsen</a></li>
                         <li><a href="#">Plooibare Fietsen</a></li>
-                        <li class="highlight-link"><a href="#">Uitverkoop</a></li>
+                        <li class="highlight-link"><a href="#">Sale</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 borderright pl-md-4 my-lg-4 my-2">
-                    <h2 class="text-white mb-3">Accessoires</h2>
+                <div class="col-lg col-md-6 borderright pl-md-4 my-lg-4 my-2">
+                    <!--type2-->
+                    <a href="#"><h2 class="text-white mb-3 text-uppercase">Accessoires</h2></a>
                     <ul>
                         <li><a href="#">Lichten</a></li>
                         <li><a href="#">Zadelzakken</a></li>
@@ -85,37 +88,13 @@
                         <li><a href="#">GPS computer</a></li>
                         <li><a href="#">Fietssloten</a></li>
                         <li><a href="#">Indoor</a></li>
-                        <li class="highlight-link"><a href="#">Uitverkoop</a></li>
+                        <li class="highlight-link"><a href="#">Sale</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 borderright pl-md-4 my-lg-4 my-2">
-                    <h2 class="text-white">Componenten</h2>
+                <div class="col-lg col-md-6 borderright pl-md-4 my-lg-4 my-2">
+                    <!--type3-->
+                    <a href="#"><h2 class="text-white mb-3 text-uppercase">Componenten</h2></a>
                     <ul>
-                        Bottom Brackets
-                        Brake Cables
-                        Brake Calipers
-                        Brake Pads
-                        Brake Rotors & Discs
-                        Cassettes
-                        Chainrings
-                        Chains
-                        Chainsets & Cranks
-                        Cleats
-                        Derailleurs
-                        Di2 Components
-                        Forks
-                        Gear Cables
-                        Gear Levers & Shifters
-                        Groupsets
-                        Handlebars
-                        Headsets
-                        Hubs & Skewers
-                        Pedals
-                        Power Meters
-                        Saddles
-                        Seatposts
-                        Stems
-                        Wheels
                         <li><a href="#">Bottombracket</a></li>
                         <li><a href="#">Remkabels</a></li>
                         <li><a href="#">Rem Calipers</a></li>
@@ -125,16 +104,46 @@
                         <li><a href="#">bidonhouder</a></li>
                         <li><a href="#">GPS computer</a></li>
                         <li><a href="#">Fietssloten</a></li>
-                        <li><a href="#">Indoor</a></li>
-                        <li class="highlight-link"><a href="#">Uitverkoop</a></li>
+                        <li><a href="#">Di2</a></li>
+                        <li><a href="#">power meters</a></li>
+                        <li><a href="#">wielen</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 pl-md-4 my-lg-4 my-2">
-                </div>
+                <div class="col-lg col-md-6 borderright my-lg-4 my-2 pl-md-4 d-flex flex-column justify-content-around">
+                    <!--gegevens-->
+                    <div class="row">
+                        <i class="fas fa-search-location icon-big text-center col-auto"></i>
+                        <div class="col my-auto">
+                            <p>1256 Foley Street <br> Deerfield Beach <br> 33442 Florida</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-mobile-alt icon-big text-center col-auto"></i>
+                        <div class="col my-auto"><p>954-699-2890</p></div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-clock icon-big text-center col-auto"></i>
+                        <div class="col my-auto"><p>
+                            bereikbaar van 7 u 00 tot en met 22 u 00</p></div>
+                    </div>
 
+                </div>
+                <div class="col-lg col-md-6 borderright pl-md-4 my-lg-4 my-auto">
+                    <!--menu andere paginas-->
+                    <div class="">
+                        <a href="#" class="active-page"><h3>Home</h3></a>
+                        <a href="#"><h3>Over ons</h3></a>
+                        <a href="#"><h3>Gebruiksvoorwaarden </h3></a>
+                        <a href="#"><h3>Handleiding </h3></a>
+                        <a href="#"><h3>Contact</h3></a>
+                        <a href="#"><h3>Vacatures</h3></a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
+    <!--profile-->
     <div class="collapse position-absolute w-100" id="navbarToggleExternalprofile">
         <div class="bg-dark p-4">
             <h4 class="text-white">profile</h4>>
@@ -143,9 +152,16 @@
 </div>
 <div class="container-fluid">
     <div class="row">
+        <!--carousel-->
         <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-interval="10000">
+                    <!--1slide-->
                     <img src="images/focus.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" data-interval="2000">

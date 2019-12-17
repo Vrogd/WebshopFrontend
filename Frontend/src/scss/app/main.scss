@@ -13,7 +13,18 @@ body{
     max-width: $width-lay;
     .navbar{
       background-color: rgba($dark-blue,0.7) !important;
-
+      box-shadow:
+              0 0.4px 1.2px rgba(0, 0, 0, 0.026),
+              0 0.9px 2.7px rgba(0, 0, 0, 0.045),
+              0 1.6px 4.6px rgba(0, 0, 0, 0.056),
+              0 2.3px 6.9px rgba(0, 0, 0, 0.063),
+              0 3.4px 10px rgba(0, 0, 0, 0.068),
+              0 4.8px 14.2px rgba(0, 0, 0, 0.07),
+              0 6.8px 20.1px rgba(0, 0, 0, 0.071),
+              0 9.9px 29.2px rgba(0, 0, 0, 0.072),
+              0 15.2px 45px rgba(0, 0, 0, 0.071),
+              0 27px 80px rgba(0, 0, 0, 0.07)
+    ;
       button[aria-expanded="true"] i{
         color: lighten($red-light,0.4);
       }
