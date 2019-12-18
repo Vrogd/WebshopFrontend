@@ -1,10 +1,14 @@
 @mixin icon{
   font-size: $iconsize*0.62;
   color: $font-c-w;
-  text-shadow: 0 0 15px #d35400;
 }
 .icon{
   @include icon;
+}
+.icon-r{
+  @include icon;
+  font-size: $iconsize;
+  color: $red-light;
 }
 .icon-big{
   @include icon;

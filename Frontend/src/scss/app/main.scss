@@ -11,10 +11,11 @@ body{
   min-width: 330px;
   font-size: $def-font-size;
   box-sizing: border-box;
-  color: $font-c-w;
+  color: $dark-blue;
   #nav{
     max-width: $width-lay;
     min-width: 330px;
+    color: $font-c-w;
     .navbar{
       background-color: rgba($dark-blue,1);
       box-shadow:
@@ -68,12 +69,15 @@ body{
       }
     }
   }
-  .carousel{
-    .carousel-caption{
-      left: 0;
-      h2{
-        font-size: 0.8rem;
-        font-weight: $bold;
+  .container-fluid{
+    top: 150px;
+    .carousel{
+      .carousel-caption{
+        left: 0;
+        h2{
+          font-size: 0.8rem;
+          font-weight: $bold;
+        }
       }
     }
   }

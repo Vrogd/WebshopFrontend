@@ -4,7 +4,7 @@ body{
   }
   /* titles */
   h2{
-    font-size: 1.4rem;
+    font-size: 1.28rem;
     font-weight: $semibold;
   }
   h3{
@@ -44,7 +44,6 @@ body{
     background-color: rgba($med-blue,1);
   }
   .carousel{
-    top: 150px;
     .carousel-caption {
       h2 {
         font-size: 0.8rem;
@@ -75,13 +74,7 @@ body{
   .badge{
     top: ($topspacing-numbericon * 2) !important;
   }
-  .borderleft{
-    border-left: solid rgba($blue-medio,0.6) 3px !important;
-  }
-  .borderright{
-    border-right: solid rgba($blue-medio,0.6) 3px !important;
-  }
-  .carousel{
+  .container-fluid{
     top: 0 !important;
   }
   .navbar {
@@ -92,7 +85,7 @@ body{
       font-size: 2.8rem !important;
     }
     button{
-      font-size: 1rem;
+      font-size: 0.85rem;
     }
   }
   .fixed-top{
@@ -109,8 +102,14 @@ body{
       font-weight: $bold !important;
     }
     button{
-      font-size: 1.3rem;
+      font-size: 1.05rem;
     }
+  }
+  .borderleft{
+    border-left: solid rgba($blue-medio,0.6) 3px !important;
+  }
+  .borderright{
+    border-right: solid rgba($blue-medio,0.6) 3px !important;
   }
 }
 
@@ -121,7 +120,7 @@ body{
       font-weight: $extrabold !important;
     }
     button{
-      font-size: 1.5rem;
+      font-size: 1.15rem;
     }
   }
 }
