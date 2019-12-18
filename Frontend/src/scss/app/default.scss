@@ -2,25 +2,6 @@ body{
   button{
     border-radius: 0 !important;
   }
-  @mixin icon{
-    font-size: $iconsize*0.62;
-    color: $font-c-w;
-    text-shadow: 0 0 15px #d35400;
-  }
-  .icon{
-    @include icon;
-  }
-  .icon-big{
-    @include icon;
-    font-size: $iconsize;
-    background-color: rgba($dark-blue,0.4);
-    width: $icon-m-size !important;
-    height: $icon-m-size !important;
-    line-height: $icon-m-size;
-    border-radius: 50%;
-  }
-
-
   /* titles */
   h2{
     font-size: 1.4rem;
@@ -38,9 +19,6 @@ body{
   }
   .badge{
     top: $topspacing-numbericon;
-  }
-  h2:hover,h3:hover{
-
   }
 
   /* lists*/
@@ -63,7 +41,21 @@ body{
     box-shadow: none !important;
   }
   .bg-med-blue{
-    background-color: rgba($med-blue,0.7) !important;
+    background-color: rgba($med-blue,1);
+  }
+  .carousel{
+    top: 150px;
+    .carousel-caption {
+      h2 {
+        font-size: 0.8rem;
+        font-weight: $bold;
+      }
+    }
+  }
+  /* voor mobile als pagina te klein zodat menu er volidg opkomt*/
+  .fixed-top{
+    position: absolute;
+    z-index: 1350;
   }
 }
 
@@ -71,7 +63,14 @@ body{
 /* breakpoints*/
 
 @media (min-width: 576px) {  }
-
+.carousel-caption{
+  h2{
+    font-size: 1.3rem !important;
+  }
+  button{
+    font-size: 0.8rem;
+  }
+}
 @media (min-width: 768px) {
   .badge{
     top: ($topspacing-numbericon * 2) !important;
@@ -82,8 +81,47 @@ body{
   .borderright{
     border-right: solid rgba($blue-medio,0.6) 3px !important;
   }
+  .carousel{
+    top: 0 !important;
+  }
+  .navbar {
+    background-color: rgba($dark-blue, 0.7) !important;
+  }
+  .carousel-caption{
+    h2{
+      font-size: 2.8rem !important;
+    }
+    button{
+      font-size: 1rem;
+    }
+  }
+  .fixed-top{
+    position: fixed;
+  }
+}
+@media (min-width: 992px) {
+  .bg-med-blue{
+    background-color: rgba($med-blue,0.7) !important;
+  }
+  .carousel-caption{
+    h2{
+      font-size: 3.2rem !important;
+      font-weight: $bold !important;
+    }
+    button{
+      font-size: 1.3rem;
+    }
+  }
 }
 
-@media (min-width: 992px) {  }
-
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {
+  .carousel-caption{
+    h2{
+      font-size: 3.8rem !important;
+      font-weight: $extrabold !important;
+    }
+    button{
+      font-size: 1.5rem;
+    }
+  }
+}

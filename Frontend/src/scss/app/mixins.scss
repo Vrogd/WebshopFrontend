@@ -1,0 +1,31 @@
+@mixin icon{
+  font-size: $iconsize*0.62;
+  color: $font-c-w;
+  text-shadow: 0 0 15px #d35400;
+}
+.icon{
+  @include icon;
+}
+.icon-big{
+  @include icon;
+  font-size: $iconsize;
+  background-color: rgba($dark-blue,0.4);
+  width: $icon-m-size !important;
+  height: $icon-m-size !important;
+  line-height: $icon-m-size;
+  border-radius: 50%;
+}
+
+@mixin button{
+  background-color: $blue-medio;
+  color: $font-c-w;
+  border-radius: 25px !important;
+  outline: none;
+  border: none;
+  padding: 5px 20px;
+  font-weight: $bold;
+}
+
+button.blue-b{
+  @include button
+}

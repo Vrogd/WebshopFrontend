@@ -2,6 +2,9 @@
 @import "../vendor/variables";
 @import './hamburger';
 @import "./default";
+@import "./mixins";
+$image-path : "../images";
+/*url (#{var} + link)*/
 body{
   font-family: $font-main,sans-serif ;
   max-width: $width-lay;
@@ -11,8 +14,9 @@ body{
   color: $font-c-w;
   #nav{
     max-width: $width-lay;
+    min-width: 330px;
     .navbar{
-      background-color: rgba($dark-blue,0.7) !important;
+      background-color: rgba($dark-blue,1);
       box-shadow:
               0 0.4px 1.2px rgba(0, 0, 0, 0.026),
               0 0.9px 2.7px rgba(0, 0, 0, 0.045),
@@ -64,9 +68,14 @@ body{
       }
     }
   }
-
-  .icon{
-    color: $font-c-w;
+  .carousel{
+    .carousel-caption{
+      left: 0;
+      h2{
+        font-size: 0.8rem;
+        font-weight: $bold;
+      }
+    }
   }
 }
 
