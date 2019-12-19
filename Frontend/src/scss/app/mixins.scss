@@ -34,3 +34,11 @@ button.blue-b{
   @include button;
   pointer-events: auto !important;
 }
+
+.fea{
+  @include button;
+}
+.fea.active{
+  background-color: $blue-medio !important;
+  border-bottom: 2px solid $red-light;
+}
