@@ -31,5 +31,6 @@
 }
 
 button.blue-b{
-  @include button
+  @include button;
+  pointer-events: auto !important;
 }

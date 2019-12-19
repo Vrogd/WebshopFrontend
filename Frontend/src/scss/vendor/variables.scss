@@ -1,6 +1,6 @@
 // Create your SCSS variables here and it will override bootstrap styles
 /*colors*/
-$dark-blue:#030f12;
+$dark-blue:#08242b;
 $med-blue:#092b33;
 $blue-medio:#1d2d44;
 $red-light:#ef5b5b;
@@ -14,9 +14,12 @@ $brown:#7b7258;
 /*fonts*/
 $def-font-size:12px;
 $font-main:'Poppins';
-
+@include media-breakpoint-up(xl) {
+  $def-font-size: 16px;
+}
 /*sizes*/
 $width-lay:1600px;
+$min-width:330px;
 $thin:100;
 $light:300;
 $book:400;

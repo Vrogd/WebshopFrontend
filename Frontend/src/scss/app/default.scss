@@ -6,6 +6,13 @@ body{
   h2{
     font-size: 1.28rem;
     font-weight: $semibold;
+    letter-spacing: -1.2px;
+  }
+  h2.bold{
+    font-weight: $bold;
+  }
+  .high{
+    /*-0 tekst 0-*/
   }
   h3{
     font-size: 1.1rem;
@@ -78,7 +85,7 @@ body{
     top: 0 !important;
   }
   .navbar {
-    background-color: rgba($dark-blue, 0.7) !important;
+    background-color: rgba($dark-blue, 0.9) !important;
   }
   .carousel-caption{
     h2{

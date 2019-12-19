@@ -8,13 +8,13 @@ $image-path : "../images";
 body{
   font-family: $font-main,sans-serif ;
   max-width: $width-lay;
-  min-width: 330px;
+  min-width: $min-width;
   font-size: $def-font-size;
   box-sizing: border-box;
   color: $dark-blue;
   #nav{
     max-width: $width-lay;
-    min-width: 330px;
+    min-width: $min-width;
     color: $font-c-w;
     .navbar{
       background-color: rgba($dark-blue,1);
@@ -74,12 +74,54 @@ body{
     .carousel{
       .carousel-caption{
         left: 0;
+        pointer-events: none;
         h2{
           font-size: 0.8rem;
-          font-weight: $bold;
         }
       }
     }
+    /*tussencat*/
+    #Tussencat{
+      color: $font-c-w;
+      div{
+        h2{
+          font-weight: bold;
+          font-size: 3rem;
+        }
+        p{
+          font-size: 1.05rem;
+        }
+        div{
+          margin-top: 140px;
+          margin-bottom: 80px;
+        }
+      }
+      /*images loaden*/
+      #Tussencat-1{
+        background: url($image-path +"/focusizalcomax.png") no-repeat center center;
+        background-size: cover;
+      }
+      #Tussencat-1:hover{
+        background: linear-gradient(rgba($med-blue, .5), rgba($med-blue,.5)), url($image-path +"/focusizalcomax.png") no-repeat center center;
+        background-size: cover;
+      }
+      #Tussencat-2{
+        background: url($image-path +"/xandprostand.png") no-repeat center center;
+        background-size: cover;
+      }
+      #Tussencat-2:hover{
+        background: linear-gradient(rgba($med-blue, .5), rgba($med-blue,.5)),url($image-path +"/xandprostand.png") no-repeat center center ;
+        background-size: cover;
+      }
+    }
+    #about{
+      h2{
+        font-size: 2rem;
+      }
+      margin: 60px 0 80px;
+    }
   }
+
+
 }
 
