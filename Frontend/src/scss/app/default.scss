@@ -3,7 +3,7 @@ body{
     border-radius: 0 !important;
   }
   /* titles */
-  h2{
+  h2,h3{
     font-size: 1.28rem;
     font-weight: $semibold;
     letter-spacing: -1.2px;
@@ -13,7 +13,6 @@ body{
   }
   h3{
     font-size: 1.1rem;
-    font-weight: $medium;
   }
   .highlight-link{
     a{
@@ -60,6 +59,10 @@ body{
     position: absolute;
     z-index: 1350;
   }
+  .border-grey{
+    border: solid 1px $bg-grey;
+    border-left: 0;
+  }
 }
 
 /* breakpoints*/
@@ -71,6 +74,13 @@ body{
     button{
       font-size: 0.8rem;
     }
+  }
+  .arrow-left,.arrow-right{
+    height: $h2-arrowheight;
+    width: $h2-arrowwidth;
+  }
+  .arrow-left{
+    transform: rotate(180deg);
   }
 }
 @media (min-width: 768px) {

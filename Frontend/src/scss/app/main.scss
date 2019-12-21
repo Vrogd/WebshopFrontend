@@ -116,16 +116,21 @@ body{
       }
       margin: 60px 0 50px;
     }
-    #featured{
+    .featured{
       background-color: $bg-grey;
       h2{
         font-size: 2rem;
         font-weight: bold;
       }
-    }
-    .tab-content{
+      .tab-content{
         background: $font-c-w;
+        a,a:hover{
+          color: $dark-blue;
+        }
+
+      }
     }
+
   }
 }
 
