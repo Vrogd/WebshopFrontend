@@ -19,6 +19,22 @@
   line-height: $icon-m-size;
   border-radius: 50%;
 }
+.icon-select{
+  @include icon;
+  font-size: $iconsize*0.7;
+  background-color: rgba($med-blue,1);
+  box-shadow: 0 0 0 2px $med-blue;
+  width: $icon-m-size *0.8 !important;
+  height: $icon-m-size *0.8 !important;
+  line-height: $icon-m-size *0.8;
+  transition: all .2s ease-in-out
+}
+.icon-select:hover{
+  transform: scale(0.9);
+}
+.icon-select.active{
+  color: $red-light;
+}
 
 @mixin button{
   background-color: $blue-medio;
@@ -45,17 +61,19 @@ button.blue-b{
 
 .newbut{
   @include button;
-  padding: 2px 5px;
+  padding: 3px 7px;
   top: 5px;
   right: 5px;
+  font-weight: $medium;
 }
 .newbut:hover{
   color: white;
 }
 @mixin price{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: $bold;
   letter-spacing: -0.8px;
+  z-index: 1046;
 }
 .price{
   @include price;
@@ -66,7 +84,7 @@ button.blue-b{
 }
 .price-pr{
   @include price;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: $red-light;
   right: 0;
   bottom: 7px;
