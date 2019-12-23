@@ -52,3 +52,22 @@ button.blue-b{
 .newbut:hover{
   color: white;
 }
+@mixin price{
+  font-size: 1.4rem;
+  font-weight: $bold;
+  letter-spacing: -0.8px;
+}
+.price{
+  @include price;
+}
+.price-cro{
+  @include price;
+  text-decoration: line-through;
+}
+.price-pr{
+  @include price;
+  font-size: 1.2rem;
+  color: $red-light;
+  right: 0;
+  bottom: 7px;
+}

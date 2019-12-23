@@ -118,16 +118,19 @@ body{
     }
     .featured{
       background-color: $bg-grey;
+      a{
+        font-size: 0.80rem;
+        letter-spacing: 1px;
+      }
       h2{
         font-size: 2rem;
-        font-weight: bold;
+        font-weight: $bold;
       }
       .tab-content{
         background: $font-c-w;
         a,a:hover{
           color: $dark-blue;
         }
-
       }
     }
 
