@@ -27,10 +27,10 @@
   width: $icon-m-size *0.8 !important;
   height: $icon-m-size *0.8 !important;
   line-height: $icon-m-size *0.8;
-  transition: all .2s ease-in-out
+  transition: all .2s ease-in-out;
 }
 .icon-select:hover{
-  transform: scale(0.9);
+  transform: scale(0.88);
 }
 .icon-select.active{
   color: $red-light;

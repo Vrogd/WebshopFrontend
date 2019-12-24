@@ -43,7 +43,6 @@ body{
         background-color: $red-light;
         color: $font-c-w;
       }
-
     }
     #navbarToggleExternalContent{
       font-size: 0.9rem;
@@ -53,11 +52,12 @@ body{
       }
     }
     #navbarToggleExternalSearch{
-      border-top: 2px solid $med-blue;
+      border-top: 2px solid $dark-blue;
       border-bottom: 2px solid $dark-blue;
       .form-control{
-        background-color: $med-blue !important;
+        background-color: rgba($dark-blue,0.7) !important;
         color: $font-c-w !important;
+        border-radius: 0;
       }
       .btn{
         min-width: 80px;
@@ -110,10 +110,13 @@ body{
         background-size: cover;
       }
     }
-    #about{
+    #about,.featured{
       h2{
         font-size: 2rem;
+        font-weight: $bold;
       }
+    }
+    #about{
       margin: 60px 0 50px;
     }
     .featured{
@@ -121,10 +124,6 @@ body{
       a{
         font-size: 0.80rem;
         letter-spacing: 1px;
-      }
-      h2{
-        font-size: 2rem;
-        font-weight: $bold;
       }
       .tab-content{
         background: $font-c-w;
