@@ -2,9 +2,10 @@
 $fontface-path:'../fonts';
 
 @font-face {
-  font-family: 'Poppins';
-  @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+  font-family: 'Quicksand';
+  @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap');
 }
+
 
 $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';

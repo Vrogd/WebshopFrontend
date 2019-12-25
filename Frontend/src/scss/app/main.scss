@@ -43,6 +43,7 @@ body{
         background-color: $red-light;
         color: $font-c-w;
       }
+
     }
     #navbarToggleExternalContent{
       font-size: 0.9rem;
@@ -50,6 +51,9 @@ body{
       a{
         color: $font-c-w;
       }
+      h2:hover,h3:hover{
+         text-decoration: underline;
+       }
     }
     #navbarToggleExternalSearch{
       border-top: 2px solid $dark-blue;
@@ -73,13 +77,17 @@ body{
       }
     }
     /*tussencat*/
+    .tussencat{
+      .icon-more{
+        opacity: 0;
+      }
+    }
+    .tussencat:hover .icon-more{
+      opacity: 1 !important;
+    }
     #Tussencat{
       color: $font-c-w;
       div{
-        h2{
-          font-weight: bold;
-          font-size: 3rem;
-        }
         p{
           font-size: 1.05rem;
         }
@@ -107,10 +115,6 @@ body{
       }
     }
     #about,.featured{
-      h2{
-        font-size: 2rem;
-        font-weight: $bold;
-      }
       h3{
         font-size: 0.95rem;
       }

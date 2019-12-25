@@ -13,10 +13,10 @@ $hover-col: #c8bfc7;
 
 
 /*fonts*/
-$def-font-size:12px;
-$font-main:'Poppins';
+$def-font-size:14px;
+$font-main:'Quicksand';
 @include media-breakpoint-up(xl) {
-  $def-font-size: 16px;
+  $def-font-size: 18px;
 }
 /*sizes*/
 $width-lay:1600px;
@@ -35,5 +35,6 @@ $h2-arrowheight:14px;
 $h2-arrowwidth:50px;
 $icon-m-size : 60px;
 $topspacing-numbericon : 20px;
+$size-more-icon:35px;
 
 $image-path : "../images";
