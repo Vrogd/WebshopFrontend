@@ -8,9 +8,9 @@ const path = require('path');
 module.exports = function (env, argv) {
   return {
     mode: 'production',
-    entry: [
-      './src/app.js'
-    ],
+    entry: {
+      app:'./src/app.js'
+    },
 
     optimization: {
       minimizer: [
@@ -21,8 +21,17 @@ module.exports = function (env, argv) {
     plugins: [
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({
-        title: 'Webpack starter project',
+        title: 'Pedalo',
+        filename:'index.html',
+        chunks: ['app'],
         template: path.resolve('./src/index.html')
+
+      }),
+      new HtmlWebpackPlugin({
+        title: 'Pedalo',
+        filename:'overview.html',
+        chunks: ['app'],
+        template: path.resolve('./src/overview.html')
       }),
       new MiniCssExtractPlugin({
         filename: "[name].css",
@@ -56,7 +65,9 @@ module.exports = function (env, argv) {
             {
               loader: "file-loader",
               options: {
-                name: "fonts/[name].[ext]",
+                name: "[name].[ext]",
+                outputPath:'fonts/',
+                esModule: false,
               }
             }
           ]

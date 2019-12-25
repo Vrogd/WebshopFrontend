@@ -1,13 +1,15 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = function(){
   return {
     mode: 'development',
-    entry: [
-      './src/app.js'
-    ],
+    entry: {
+      app:'./src/app.js'
+    }
+    ,
     watch: true,
     watchOptions: {
       aggregateTimeout: 300, // Process all changes which happened in this time into one rebuild
@@ -26,11 +28,26 @@ module.exports = function(){
       inline: true
     },
     plugins: [
+      new CopyPlugin([
+        { from: 'src/fonts', to: 'dist' },
+        { from: 'src/images', to: 'dist' },
+      ]),
       new HtmlWebpackPlugin({
-        title: 'Webpack starter project',
-        template: path.resolve('./src/index.html')
+        title: 'Pedalo',
+        filename:'index.html',
+        chunks: ['app'],
+       template: path.resolve('./src/index.html')
+
       }),
-      new webpack.HotModuleReplacementPlugin(),
+      new HtmlWebpackPlugin({
+
+        title: 'Pedalo',
+        template: path.resolve('./src/overview.html'),
+        chunks: ['app'],
+        filename: 'overview.html'
+      }),
+
+      new webpack.HotModuleReplacementPlugin()
     ],
     module: {
       rules: [
@@ -41,10 +58,11 @@ module.exports = function(){
           }, {
             loader: 'css-loader', // translates CSS into CommonJS modules
           }, {
-            loader: 'postcss-loader', // Run postcss actions
+            loader: 'postcss-loader', // Run post css actions
             options: {
-              plugins: function () { // postcss plugins, can be exported to postcss.config.js
+              plugins: function () { // post css plugins, can be exported to postcss.config.js
                 return [
+                  require('precss'),
                   require('autoprefixer')
                 ];
               }
@@ -67,7 +85,7 @@ module.exports = function(){
           test: /\.(jpg|jpeg|gif|png|svg|webp)$/,
           use: [
             {
-              loader: "file-loader",
+              loader: "url-loader",
               options: {
                 outputPath: 'images/',
                 name: "[name].[ext]",
@@ -82,7 +100,9 @@ module.exports = function(){
             {
               loader: "file-loader",
               options: {
-                name: "fonts/[name].[ext]",
+                name: "[name].[ext]",
+                outputPath:'fonts/',
+                esModule: false,
               }
             }
           ]
