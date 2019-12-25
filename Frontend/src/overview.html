@@ -1,10 +1,191 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="nl">
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="fietsenwinkel">
+    <meta name="author" content="Steven">
+    <meta name="keywords" content="webshop,fietsen,accesoires,online,cycling,merken">
+    <title>Pedalo</title>
 </head>
-<body>
+<body class="mx-auto">
+<div id="nav" class="pos-f-t fixed-top mx-auto">
+    <nav class="navbar p-0 align-items-stretch justify-content-start">
+        <div id="nav-left" class="col-lg-2 col-md-3 col-5 col-sm-6 align-items-stretch d-flex justify-content-lg-center order-3 order-md-1 my-2 my-md-0">
+            <div class=" row px-lg-0 px-xl-4 align-items-stretch justify-content-lg-center justify-content-between mx-auto mx-md-0">
+                <button id="nav-search" class="navbar-toggler col-6 px-4 borderleft" type="button" data-toggle="collapse" data-target="#navbarToggleExternalSearch" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-search icon"></i>
+                </button>
+                <button id="nav-men" class="navbar-toggler col-6 px-4 borderleft borderright" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="hamburger">
+                            <span class="hamburger__line"></span>
+                            <span class="hamburger__line"></span>
+                            <span class="hamburger__line"></span>
+                        </span>
+                </button>
+            </div>
 
+        </div>
+        <a class="navbar-brand offset-lg-2 offset-md-1 mr-0 col-lg-4 col-md-4 col-12 order-1 order-md-2 text-center mb-4 mb-md-0 pr-0" href="#">
+            <img class="my-1" src="images/logo.png" alt="logo">
+        </a>
+        <div id="nav-right" class="col-lg-3 offset-lg-1 offset-md-0 col-md-4 col-sm-6 col-7 align-items-stretch d-flex justify-content-start justify-content-md-end order-2 order-md-2 pb-4 pt-2 pb-md-0 pt-md-0 ">
+            <div class="row d-flex align-self-stretch justify-content-center mx-md-auto">
+                <button class="navbar-toggler col-auto px-4 borderleft" type="button" data-toggle="collapse" data-target="#navbarToggleExternalprofile" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-user-alt icon"></i>
+                </button>
+                <button class="navbar-toggler col-auto px-4 borderleft" type="button">
+                    <i class="fas fa-heart icon"></i><span class="badge rounded-circle badge-light position-absolute">4</span>
+                </button>
+                <button class="navbar-toggler col-auto px-4 borderleft borderright" type="button">
+                    <i class="fas fa-shopping-cart icon"></i><span class="badge rounded-circle badge-light position-absolute">2</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!--menu en search-->
+    <div class="position-absolute w-100">
+        <div class="collapse " id="navbarToggleExternalSearch">
+            <div class="bg-med-blue">
+                <form class="form-inline my-lg-0 position-relative mx-auto">
+                    <input class="form-control col py-0" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn my-sm-0 position-relative" type="submit"><i class="fas fa-search icon"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="collapse col" id="navbarToggleExternalContent">
+            <div class="bg-med-blue row">
+                <div class="col-lg col-md-6 borderright pl-md-4 pl-5 my-lg-4 my-2 order-lg-0 order-2">
+                    <!--type1-->
+                    <a href="#"><h2 class="text-white mb-3">Bikes</h2></a>
+                    <ul>
+                        <li><a href="#">Road Fietsen</a></li>
+                        <li><a href="#">Road Frames</a></li>
+                        <li><a href="#">TT en Thriathlon Bikes en Frames</a></li>
+                        <li><a href="#">Avontuur Fietsen</a></li>
+                        <li><a href="#">Cyclocross Fietsen</a></li>
+                        <li><a href="#">Mountainbikes</a></li>
+                        <li><a href="#">Electrische Fietsen</a></li>
+                        <li><a href="#">Plooibare Fietsen</a></li>
+                        <li class="highlight-link"><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg col-md-6 borderright pl-md-4 pl-5 my-lg-4 my-2 order-lg-1 order-3">
+                    <!--type2-->
+                    <a href="#"><h2 class="text-white mb-3">Accessoires</h2></a>
+                    <ul>
+                        <li><a href="#">Lichten</a></li>
+                        <li><a href="#">Zadelzakken</a></li>
+                        <li><a href="#">Fietslichten</a></li>
+                        <li><a href="#">Cameras</a></li>
+                        <li><a href="#">Chains</a></li>
+                        <li><a href="#">Bidons</a></li>
+                        <li><a href="#">bidonhouder</a></li>
+                        <li><a href="#">GPS computer</a></li>
+                        <li><a href="#">Fietssloten</a></li>
+                        <li><a href="#">Indoor</a></li>
+                        <li class="highlight-link"><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg col-md-6 borderright pl-md-4 pl-5 my-lg-4 my-2 order-lg-2 order-4">
+                    <!--type3-->
+                    <a href="#"><h2 class="text-white mb-3">Componenten</h2></a>
+                    <ul>
+                        <li><a href="#">Bottombracket</a></li>
+                        <li><a href="#">Remkabels</a></li>
+                        <li><a href="#">Rem Calipers</a></li>
+                        <li><a href="#">Cassetes</a></li>
+                        <li><a href="#">Chains</a></li>
+                        <li><a href="#">Bidons</a></li>
+                        <li><a href="#">bidonhouder</a></li>
+                        <li><a href="#">GPS computer</a></li>
+                        <li><a href="#">Fietssloten</a></li>
+                        <li><a href="#">Di2</a></li>
+                        <li><a href="#">power meters</a></li>
+                        <li><a href="#">wielen</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg col-md-6 borderright my-lg-4 pl-5 my-3 pl-md-4 d-flex flex-column justify-content-around order-lg-3 order-0">
+                    <!--gegevens-->
+                    <div class="row my-lg-0">
+                        <i class="fas fa-search-location icon-big text-center col-auto"></i>
+                        <div class="col my-auto">
+                            <p>1256 Foley Street <br> Deerfield Beach <br> 33442 Florida</p>
+                        </div>
+                    </div>
+                    <div class="row my-lg-0">
+                        <i class="fas fa-mobile-alt icon-big text-center col-auto"></i>
+                        <div class="col my-auto"><p>954-699-2890</p></div>
+                    </div>
+                    <div class="row my-lg-0 my-3">
+                        <i class="fas fa-clock icon-big text-center col-auto"></i>
+                        <div class="col my-auto"><p>
+                            maandag - zaterdag <br> 7 u 00 tot 22 u 00</p></div>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6 borderright pl-md-4 pl-5 mb-4 my-4 order-lg-4 order-1">
+                    <!--menu andere paginas-->
+                    <a href="/"><h3 class="active-page">Home</h3></a>
+                    <a href="#"><h3>Over ons</h3></a>
+                    <a href="#"><h3>Gebruiksvoorwaarden </h3></a>
+                    <a href="#"><h3>Handleiding </h3></a>
+                    <a href="#"><h3>Contact</h3></a>
+                    <a href="#"><h3>Vacatures</h3></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--profile-->
+    <div class="collapse position-absolute w-100" id="navbarToggleExternalprofile">
+        <div class="bg-dark p-4">
+            <h4 class="text-white">profile</h4>>
+        </div>
+    </div>
+</div>
+<div class="container-fluid position-relative">
+
+</div>
+<footer class="container-fluid position-relative">
+    <div class="row pt-5 pb-2 pb-lg-4">
+        <div class="col-lg-4 offset-lg-1 col-md-6">
+            <img class="img-fluid mx-auto mx-md-0 d-block mb-2" src="images/logo-small.png" alt="logo">
+            <p class="text-md-left text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra </p>
+        </div>
+        <div class="col-lg-1 offset-lg-1 col-md-3 text-md-left text-center">
+            <h2>Help</h2>
+            <ul>
+                <li><a href="#">lorem ipsum</a></li>
+                <li><a href="#">lorem ipsum</a></li>
+                <li><a href="#">lorem ipsum</a></li>
+                <li><a href="#">lorem ipsum</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-1 offset-lg-1 col-md-3 text-md-left text-center">
+            <h2>Over ons</h2>
+            <ul>
+                <li><a href="#">lorem ipsum</a></li>
+                <li><a href="#">lorem ipsum</a></li>
+                <li><a href="#">lorem ipsum</a></li>
+                <li><a href="#">lorem ipsum</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-2 col-md-12 text-center text-lg-right my-lg-0 my-4">
+            <div>
+                <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                <a href="#" class="mx-4"><i class="fab fa-twitter icon"></i></a>
+                <a href="#" class="mr-4"><i class="fab fa-google icon "></i></a>
+                <a href="#"><i class="fab fa-instagram icon"></i></a>
+            </div>
+            <h3 class="mt-4 mb-0">Betalingsmethoden</h3>
+            <div>
+                <i class="fab fa-paypal icon-pay mx-3"></i>
+                <i class="fab fa-cc-visa icon-pay"></i>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
