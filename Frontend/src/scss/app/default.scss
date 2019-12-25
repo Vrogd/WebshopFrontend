@@ -10,6 +10,7 @@ body{
   }
   h2.bold{
     font-weight: $bold;
+    font-size: 2.2rem;
   }
   h3{
     font-size: 1.1rem;
@@ -24,10 +25,14 @@ body{
   .badge{
     top: $topspacing-numbericon;
   }
-
+  ::-webkit-search-cancel-button{
+    background: white;
+    display: none;
+  }
   /* lists*/
   a{
     text-decoration: none !important;
+    color: $font-c-g;
   }
   ul{
     padding: 0;

@@ -19,6 +19,11 @@
   line-height: $icon-m-size;
   border-radius: 50%;
 }
+.icon-pay{
+  @include icon;
+  font-size: $iconsize;
+  line-height: $icon-m-size;
+}
 .icon-select{
   @include icon;
   font-size: $iconsize*0.7;
