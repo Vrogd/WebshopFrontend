@@ -1,80 +1,91 @@
-body{
-  button{
+body {
+  button {
     border-radius: 0 !important;
   }
+
   /* titles */
-  h2,h3{
+  h2, h3 {
     font-size: 1.28rem;
     font-weight: $bold;
     letter-spacing: -1.2px;
   }
-  h2.bold{
+
+  h2.bold {
     font-size: 2rem;
   }
-  h3{
+
+  h3 {
     font-size: 1.1rem;
     height: 1.1rem;
   }
-  .highlight-link{
-    a{
+
+  .highlight-link {
+    a {
       font-size: 1.1rem;
       font-weight: $bold;
     }
   }
-  .badge{
+
+  .badge {
     top: $topspacing-numbericon;
     height: 20px;
     width: 20px;
     line-height: 20px !important;
     padding: 0;
   }
-  ::-webkit-search-cancel-button{
+
+  ::-webkit-search-cancel-button {
     background: white;
     display: none;
   }
+
   /* lists*/
-  a{
+  a {
     text-decoration: none !important;
     color: $font-c-g;
   }
-  ul{
+  ul {
     padding: 0;
-    li{
+    li {
       list-style: none;
-      a:hover{
-        color: lighten($red-light,0.5) !important;
+      a:hover {
+        color: $font-c-w;
       }
     }
   }
   /* button styles weg doen*/
-  .btn:focus,.btn:active, .btn:visited,.form-control,.form-control:active , .form-control:visited {
-    border:none;
+  .btn:focus, .btn:active, .btn:visited, .form-control, .form-control:active, .form-control:visited {
+    border: none;
     outline: none !important;
     box-shadow: none !important;
   }
-  .bg-med-blue{
-    background-color: rgba($med-blue,1);
+
+  .bg-med-blue {
+    background-color: rgba($med-blue, 1);
   }
+
   /* voor mobile als pagina te klein zodat menu er volidg opkomt*/
-  .fixed-top{
+  .fixed-top {
     position: absolute;
     z-index: 1350;
   }
-  .border-grey{
-    border: solid 1px $bg-grey;
+
+  .border-grey {
+    border: outset $size-b-small $bg-grey;
   }
-  .article{
+
+  .article {
     top: 0 !important;
     left: 0 !important;
     opacity: 0;
   }
-  .article:hover, .article:active{
-    background-color: rgba($hover-col,0.75);
+
+  .article:hover, .article:active {
+    background-color: rgba($hover-col, 0.75);
     z-index: 1050;
     opacity: 1 !important;
   }
 }
-
 /* breakpoints*/
 @media (min-width: 576px) {
   .carousel-caption{
@@ -97,7 +108,7 @@ body{
   .container-fluid{
     top: 0 !important;
   }
-  .navbar {
+  .home .navbar {
     background-color: rgba($dark-blue, 0.9) !important;
   }
   .carousel-caption{

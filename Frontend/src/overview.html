@@ -28,7 +28,7 @@
             </div>
 
         </div>
-        <a class="navbar-brand offset-lg-2 offset-md-1 mr-0 col-lg-4 col-md-4 col-12 order-1 order-md-2 text-center mb-4 mb-md-0 pr-0" href="#">
+        <a class="navbar-brand offset-lg-2 offset-md-1 mr-0 col-lg-4 col-md-4 col-12 order-1 order-md-2 text-center mb-4 mb-md-0 pr-0" href="index.html">
             <img class="my-1" src="images/logo.png" alt="logo">
         </a>
         <div id="nav-right" class="col-lg-3 offset-lg-1 offset-md-0 col-md-4 col-sm-6 col-7 align-items-stretch d-flex justify-content-start justify-content-md-end order-2 order-md-2 pb-4 pt-2 pb-md-0 pt-md-0 ">
@@ -93,7 +93,7 @@
                     <!--type3-->
                     <a href="#"><h2 class="text-white mb-3">Componenten</h2></a>
                     <ul>
-                        <li><a href="#">Bottombracket</a></li>
+                        <li><a href="#">Bottombracket</a></li>npm run watch
                         <li><a href="#">Remkabels</a></li>
                         <li><a href="#">Rem Calipers</a></li>
                         <li><a href="#">Cassetes</a></li>
@@ -144,8 +144,219 @@
         </div>
     </div>
 </div>
-<div class="container-fluid position-relative">
+<div class="mt-5 bread">
+    <nav aria-label="breadcrumb">
+        <div class="pt-5 pb-1">
+            <h2 class="text-center">Fietsen</h2>
+            <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Fietsen</li>
+            </ol>
+        </div>
 
+    </nav>
+</div>
+<div class="container-fluid">
+    <div class="row">
+    <!-- top -->
+        <div class="top-filters col-12">
+            <div class="row">
+                <div class="col-3 d-flex justify-content-start align-items-center">
+                    <h2>Filters</h2>
+                </div>
+                <div class="col-9 sort-by py-3">
+                    <div class="dropdown">
+                        <label>Order by</label>
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Meest verkocht</a>
+                            <a class="dropdown-item" href="#">Prijs hoog-laag</a>
+                            <a class="dropdown-item" href="#">Prijs laag-hoog</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    <!-- searchoptions -->
+        <div class="col-lg-3 col-md-4 col-12 p-0 leftoptions">
+            <div id="accordion row p-0" class="panel panel-primary behclick-panel">
+                <div class="panel-body" >
+                    <div class="panel-heading py-2 pl-2 my-1" >
+                        <h3 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse0">
+                                <i class="indicator fa fa-caret-down" aria-hidden="true"></i> Price
+                            </a>
+                        </h3>
+                    </div>
+                    <div id="collapse0" class="panel-collapse show in" >
+                        test Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus necessitatibus perspiciatis ratione. Aut culpa dolor hic modi molestiae recusandae?
+                        <form>
+                            <!--keuze budget bovenaan / brand / keuze merk fiets/comp  -->
+                        </form>
+                    </div>
+                    <div class="panel-heading py-2 pl-2 my-1" >
+                        <h3 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse1">
+                                <i class="indicator fa fa-caret-down" aria-hidden="true"></i> Price
+                            </a>
+                        </h3>
+                    </div>
+                    <div id="collapse1" class="panel-collapse show in" >
+                        test
+                        <form>
+                            <!--keuze budget bovenaan / brand / keuze merk fiets/comp  -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- products -->
+        <div class="col-lg-9 col-md-8 col-12">
+            <div class="row">
+                <article class="col-lg-4 col-md-6 col-12 position-relative text-center border-grey border ">
+                    <h3 class="col-10 mt-4 text-center mx-auto">Ridley Fenix SL Frame (2017)</h3>
+                    <img class="my-4 img-fluid" src="images/Ridley-Fenix-2017.png" alt="fen">
+                    <div class="row">
+                        <div class="col-lg-6 offset-md-6 position-relative">
+                            <p class="text-right mb-0 price-pr position-absolute pr-3 pb-4">€ 1.599,00</p>
+                            <p class="text-right mb-2 price-cro">€ 1.799,00</p>
+                        </div>
+                    </div>
+                    <span class="newbut position-absolute">Nieuw</span>
+                    <div class="position-absolute h-100 w-100 article justify-content-center align-items-center d-flex">
+                        <div>
+                            <a href="#"><i class="fas fa-heart icon-select rounded-circle mx-1"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart icon-select rounded-circle active mx-1"></i></a>
+                            <a href="#"><i class="fas fa-plus icon-select rounded-circle mx-1"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-lg-4 col-md-6 col-12 position-relative text-center border-grey border ">
+                    <h3 class="col-10 mt-4 text-center mx-auto">Rondo RUUT TI DISC Adventure bike 2019</h3>
+                    <img class="my-4 img-fluid" src="images/RondoRuutTiDI.png" alt="Rondo">
+                    <div class="row">
+                        <div class="col-lg-6 offset-md-6 position-relative">
+                            <p class="text-right mb-2 price">€ 1.799,00</p>
+                        </div>
+                    </div>
+                    <div class="position-absolute h-100 w-100 article justify-content-center align-items-center d-flex">
+                        <div>
+                            <a href="#"><i class="fas fa-heart icon-select rounded-circle mx-1"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart icon-select rounded-circle active mx-1"></i></a>
+                            <a href="#"><i class="fas fa-plus icon-select rounded-circle mx-1"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-lg-4 col-md-6 col-12 position-relative text-center border-grey border ">
+                    <h3 class="col-10 mt-4 text-center mx-auto">Specialized Diverge Sport Disc ADVENTURE ROAD BIKE 2020</h3>
+                    <img class="my-4 img-fluid" src="images/SpecializedDivergeSport.png" alt="spec">
+                    <div class="row">
+                        <div class="col-lg-6 offset-md-6 position-relative">
+                            <p class="text-right mb-0 price-pr position-absolute pr-3 pb-4">€ 1.599,00</p>
+                            <p class="text-right mb-2 price-cro">€ 1.799,00</p>
+                        </div>
+                    </div>
+                    <span class="newbut position-absolute">Nieuw</span>
+                    <div class="position-absolute h-100 w-100 article justify-content-center align-items-center d-flex">
+                        <div>
+                            <a href="#"><i class="fas fa-heart icon-select rounded-circle mx-1"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart icon-select rounded-circle active mx-1"></i></a>
+                            <a href="#"><i class="fas fa-plus icon-select rounded-circle mx-1"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-lg-4 col-md-6 col-12 position-relative text-center border-grey border ">
+                    <h3 class="col-10 mt-4 text-center mx-auto">3T CYCLING STRADA DUE TEAM SRAM RED AXS 12-SPEED DISC</h3>
+                    <img class="my-4 img-fluid" src="images/3TCyclingStrada.png" alt="3t">
+                    <div class="row">
+                        <div class="col-lg-6 offset-md-6 position-relative">
+                            <p class="text-right mb-2 price">€ 1.799,00</p>
+                        </div>
+                    </div>
+                    <div class="position-absolute h-100 w-100 article justify-content-center align-items-center d-flex">
+                        <div>
+                            <a href="#"><i class="fas fa-heart icon-select rounded-circle mx-1"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart icon-select rounded-circle active mx-1"></i></a>
+                            <a href="#"><i class="fas fa-plus icon-select rounded-circle mx-1"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-lg-4 col-md-6 col-12 position-relative text-center border-grey border ">
+                    <h3 class="col-10 mt-4 text-center mx-auto">Ridley Fenix SL Frame (2017)</h3>
+                    <img class="my-4 img-fluid" src="images/Ridley-Fenix-2017.png" alt="fen">
+                    <div class="row">
+                        <div class="col-lg-6 offset-md-6 position-relative">
+                            <p class="text-right mb-0 price-pr position-absolute pr-3 pb-4">€ 1.599,00</p>
+                            <p class="text-right mb-2 price-cro">€ 1.799,00</p>
+                        </div>
+                    </div>
+                    <span class="newbut position-absolute">Nieuw</span>
+                    <div class="position-absolute h-100 w-100 article justify-content-center align-items-center d-flex">
+                        <div>
+                            <a href="#"><i class="fas fa-heart icon-select rounded-circle mx-1"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart icon-select rounded-circle active mx-1"></i></a>
+                            <a href="#"><i class="fas fa-plus icon-select rounded-circle mx-1"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-lg-4 col-md-6 col-12 position-relative text-center border-grey border ">
+                    <h3 class="col-10 mt-4 text-center mx-auto">Rondo RUUT TI DISC Adventure bike 2019</h3>
+                    <img class="my-4 img-fluid" src="images/RondoRuutTiDI.png" alt="Rondo">
+                    <div class="row">
+                        <div class="col-lg-6 offset-md-6 position-relative">
+                            <p class="text-right mb-2 price">€ 1.799,00</p>
+                        </div>
+                    </div>
+                    <div class="position-absolute h-100 w-100 article justify-content-center align-items-center d-flex">
+                        <div>
+                            <a href="#"><i class="fas fa-heart icon-select rounded-circle mx-1"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart icon-select rounded-circle active mx-1"></i></a>
+                            <a href="#"><i class="fas fa-plus icon-select rounded-circle mx-1"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-lg-4 col-md-6 col-12 position-relative text-center border-grey border ">
+                    <h3 class="col-10 mt-4 text-center mx-auto">Specialized Diverge Sport Disc ADVENTURE ROAD BIKE 2020</h3>
+                    <img class="my-4 img-fluid" src="images/SpecializedDivergeSport.png" alt="spec">
+                    <div class="row">
+                        <div class="col-lg-6 offset-md-6 position-relative">
+                            <p class="text-right mb-0 price-pr position-absolute pr-3 pb-4">€ 1.599,00</p>
+                            <p class="text-right mb-2 price-cro">€ 1.799,00</p>
+                        </div>
+                    </div>
+                    <span class="newbut position-absolute">Nieuw</span>
+                    <div class="position-absolute h-100 w-100 article justify-content-center align-items-center d-flex">
+                        <div>
+                            <a href="#"><i class="fas fa-heart icon-select rounded-circle mx-1"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart icon-select rounded-circle active mx-1"></i></a>
+                            <a href="#"><i class="fas fa-plus icon-select rounded-circle mx-1"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-lg-4 col-md-6 col-12 position-relative text-center border-grey border">
+                    <h3 class="col-10 mt-4 text-center mx-auto">3T CYCLING STRADA DUE TEAM SRAM RED AXS 12-SPEED DISC</h3>
+                    <img class="my-4 img-fluid" src="images/3TCyclingStrada.png" alt="3t">
+                    <div class="row">
+                        <div class="col-lg-6 offset-md-6 position-relative">
+                            <p class="text-right mb-2 price">€ 1.799,00</p>
+                        </div>
+                    </div>
+                    <div class="position-absolute h-100 w-100 article justify-content-center align-items-center d-flex">
+                        <div>
+                            <a href="#"><i class="fas fa-heart icon-select rounded-circle mx-1"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart icon-select rounded-circle active mx-1"></i></a>
+                            <a href="#"><i class="fas fa-plus icon-select rounded-circle mx-1"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
 </div>
 <footer class="container-fluid position-relative">
     <div class="row pt-5 pb-2 pb-lg-4">

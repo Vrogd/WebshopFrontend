@@ -71,6 +71,18 @@ body{
       }
     }
   }
+  .bread , .breadcrumb{
+    background-color: $med-blue !important;
+    border-radius: 0;
+    a{
+      color: $font-c-w;
+    }
+    h2{
+      color: $font-c-w;
+    }
+  }
+
+
   .container-fluid{
     top: 145px;
     .carousel{
@@ -148,6 +160,15 @@ body{
           left: -10px;
           border-radius: 0 25px 25px 0 !important;
         }
+      }
+    }
+    .top-filters{
+      background-color: $red-light;
+    }
+    .panel-heading{
+      background-color: $bg-grey!important;
+      a{
+        color: $dark-blue !important;
       }
     }
   }
