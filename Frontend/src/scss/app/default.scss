@@ -53,6 +53,20 @@ body {
       }
     }
   }
+  .top-filters{
+      background-color: $dark-blue;
+      color: $font-c-w;
+  }
+  .accordion{
+    .panel-heading{
+      background-color: $bg-grey!important;
+      a{
+        color: $dark-blue !important;
+        font-size: 0.95rem;
+        letter-spacing: -0.8px;
+      }
+    }
+  }
   /* button styles weg doen*/
   .btn:focus, .btn:active, .btn:visited, .form-control, .form-control:active, .form-control:visited {
     border: none;
@@ -69,11 +83,6 @@ body {
     position: absolute;
     z-index: 1350;
   }
-
-  .border-grey {
-    border: outset $size-b-small $bg-grey;
-  }
-
   .article {
     top: 0 !important;
     left: 0 !important;

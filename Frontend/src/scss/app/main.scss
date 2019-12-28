@@ -167,29 +167,15 @@ body{
         }
       }
     }
-
-    .top-filters{
-      background-color: $dark-blue;
-      color: $font-c-w;
-    }
-    .panel-heading{
-      background-color: $bg-grey!important;
-      a{
-        color: $dark-blue !important;
-      }
-    }
   }
   .bread{
     background:linear-gradient( rgba($med-blue,0.8) 100%, rgba($blue-medio,0.8)100%),url($image-path +"/focus.png") center no-repeat;
     background-size: cover;
-     font-size: 1.2rem !important;
+    font-size: 1.2rem !important;
     font-weight: $medium;
-    .breadcrumb{
-      background-color: rgba(black,0) !important;
-    }
-    .breadcrumb-item.active{
-      color: $red-light !important;
-    }
+      .breadcrumb{
+        background-color: rgba(black,0) !important;
+      }
    }
   footer{
     background-color: $dark-blue;
