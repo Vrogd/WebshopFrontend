@@ -104,3 +104,8 @@ button.blue-b{
   right: 0;
   bottom: 7px;
 }
+.btn-quik , .btn-quik:hover{
+  background-color: $blue-medio;
+  color: $font-c-w;
+  border-radius: 20px !important;
+}
