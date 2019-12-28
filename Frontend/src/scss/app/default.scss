@@ -68,7 +68,7 @@ body {
     }
   }
   /* button styles weg doen*/
-  .btn:focus, .btn:active, .btn:visited, .form-control, .form-control:active, .form-control:visited {
+  .btn, .btn:focus, .btn:active, .btn:visited, .form-control, .form-control:active, .form-control:visited {
     border: none;
     outline: none !important;
     box-shadow: none !important;
