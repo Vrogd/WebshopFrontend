@@ -3,6 +3,11 @@ body {
     border-radius: 0 !important;
   }
 
+  .border {
+    outline: 1px solid $bg-grey !important;
+    border: none;
+  }
+
   /* titles */
   h2, h3 {
     font-size: 1.28rem;
@@ -44,32 +49,42 @@ body {
     text-decoration: none !important;
     color: $font-c-g;
   }
+
   ul {
     padding: 0;
+
     li {
       list-style: none;
+
       a:hover {
-        color: $font-c-w;
+        color: $red-light !important;
       }
     }
   }
-  .top-filters{
-      background-color: $dark-blue;
-      color: $font-c-w;
+
+  .top-filters {
+    background-color: $dark-blue;
+    color: $font-c-w;
   }
-  .accordion{
-    .panel-heading{
-      background-color: $bg-grey!important;
-      a{
+
+  .accordion {
+    font-weight: $semibold;
+
+    .panel-heading {
+      background-color: $bg-grey !important;
+
+      a {
         color: $dark-blue !important;
         font-size: 0.95rem;
+        line-height: 0.95rem;
         letter-spacing: -0.8px;
       }
     }
   }
+
   /* button styles weg doen*/
-  .btn, .btn:focus, .btn:active, .btn:visited, .form-control, .form-control:active, .form-control:visited {
-    border: none;
+  .btn, .btn:focus, .btn:active, .btn:visited, .form-control, .form-control:active, .form-control:visited, #amount, .ui-slider-handle, .page-item, .page-link {
+    border: none !important;
     outline: none !important;
     box-shadow: none !important;
   }
@@ -83,6 +98,7 @@ body {
     position: absolute;
     z-index: 1350;
   }
+
   .article {
     top: 0 !important;
     left: 0 !important;
@@ -93,6 +109,24 @@ body {
     background-color: rgba($hover-col, 0.75);
     z-index: 1050;
     opacity: 1 !important;
+  }
+
+  .ui-slider-handle {
+    background-color: $dark-blue !important;
+    border-radius: 50%;
+  }
+
+  .ui-slider-range {
+    background-color: $blue-medio;
+  }
+  .pagination {
+    .page-item.active .page-link{
+      background-color: $med-blue !important;
+    }
+    a {
+    color: $dark-blue;
+    font-weight: $bold;
+    }
   }
 }
 /* breakpoints*/

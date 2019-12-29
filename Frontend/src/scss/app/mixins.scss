@@ -79,6 +79,7 @@ button.blue-b{
   padding: 3px 7px;
   top: 5px;
   right: 5px;
+  background-color: $med-blue;
   font-weight: $medium;
 }
 .newbut:hover{
@@ -105,7 +106,8 @@ button.blue-b{
   bottom: 7px;
 }
 .btn-quik , .btn-quik:hover{
-  background-color: $blue-medio;
+  background-color: $med-blue;
   color: $font-c-w;
   border-radius: 20px !important;
+  font-size: 0.9rem;
 }

@@ -41,11 +41,7 @@ module.exports = function (env, argv) {
         filename: "[name].css",
         chunkFilename: "[id].css"
       }),
-      new MinifyPlugin(),
-      new webpack.ProvidePlugin({
-        $: "jquery",
-        jQuery: "jquery"
-      })
+      new MinifyPlugin()
     ],
     module: {
       rules: [
