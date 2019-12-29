@@ -46,7 +46,10 @@ module.exports = function(){
         chunks: ['app'],
         filename: 'overview.html'
       }),
-
+      new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery"
+      }),
       new webpack.HotModuleReplacementPlugin()
     ],
     module: {

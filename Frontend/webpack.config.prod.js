@@ -11,7 +11,11 @@ module.exports = function (env, argv) {
     entry: {
       app:'./src/app.js'
     },
-
+    resolve: {
+      alias: {
+        jquery: "jquery/src/jquery"
+      }
+    },
     optimization: {
       minimizer: [
         new OptimizeCSSAssetsPlugin()
@@ -37,7 +41,11 @@ module.exports = function (env, argv) {
         filename: "[name].css",
         chunkFilename: "[id].css"
       }),
-      new MinifyPlugin()
+      new MinifyPlugin(),
+      new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery"
+      })
     ],
     module: {
       rules: [
