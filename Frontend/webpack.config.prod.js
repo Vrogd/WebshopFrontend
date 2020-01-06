@@ -37,6 +37,12 @@ module.exports = function (env, argv) {
         chunks: ['app'],
         template: path.resolve('./src/overview.html')
       }),
+      new HtmlWebpackPlugin({
+        title: 'Pedalo',
+        filename:'detail.html',
+        chunks: ['app'],
+        template: path.resolve('./src/detail.html')
+      }),
       new MiniCssExtractPlugin({
         filename: "[name].css",
         chunkFilename: "[id].css"

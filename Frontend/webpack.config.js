@@ -46,6 +46,12 @@ module.exports = function(){
         chunks: ['app'],
         filename: 'overview.html'
       }),
+      new HtmlWebpackPlugin({
+        title: 'Pedalo',
+        filename:'detail.html',
+        chunks: ['app'],
+        template: path.resolve('./src/detail.html')
+      }),
       new webpack.ProvidePlugin({
         $: "jquery",
         jQuery: "jquery"

@@ -110,15 +110,19 @@ body {
     z-index: 1050;
     opacity: 1 !important;
   }
+  .ui-slider-horizontal{
+    height: 0.5rem;
+    .ui-slider-handle {
+      background-color: $dark-blue !important;
+      border-radius: 50%;
+      top: -0.35rem;
+    }
 
-  .ui-slider-handle {
-    background-color: $dark-blue !important;
-    border-radius: 50%;
+    .ui-slider-range {
+      background-color: $blue-medio;
+    }
   }
 
-  .ui-slider-range {
-    background-color: $blue-medio;
-  }
   .pagination {
     .page-item.active .page-link{
       background-color: $med-blue !important;
