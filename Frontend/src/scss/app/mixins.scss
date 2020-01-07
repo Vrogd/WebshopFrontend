@@ -49,6 +49,15 @@
   right: 0;
   bottom: 0;
 }
+.iconstock{
+  @include icon;
+  font-size: 0.8rem;
+  background-color: $red-light;
+  border-radius: 15px !important;
+}
+.iconstock:hover{
+  color: $font-c-w;
+}
 
 @mixin button{
   background-color: $blue-medio;
@@ -86,6 +95,7 @@ button.blue-b{
 .newbut:hover{
   color: white;
 }
+
 @mixin price{
   font-size: 1.2rem;
   font-weight: $bold;

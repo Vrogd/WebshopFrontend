@@ -14,9 +14,25 @@ $( document ).ready(function() {
             " - $" + $( "#slider-range" ).slider( "values", 1 ) );
     } );
     $( function() {
-        $('.zoom_image').elevateZoom({
+        $(".zoom_image").elevateZoom({
+            gallery:'gallery_01',
+            galleryActiveClass: 'active',
+            imageCrossfade: true,
             zoomType : "inner",
             cursor: "move",
+        });
+        $(".zoom-small").bind("click", function(e) {
+            var ez =  $(this).data();
+            console.log(ez);
+            if ($(this).attr("src",ez.image) == $(".zoom_image").attr("src",ez.image))
+            $(".zoom_image").attr("src",ez.image);
+            $(".zoom_image").data('zoom-image',ez.zoomImage ).elevateZoom({
+                gallery:'gallery_01',
+                galleryActiveClass: 'active',
+                imageCrossfade: true,
+                zoomType : "inner",
+                cursor: "move",
+            });
         });
     } );
     $(window).resize(function(){location.reload();});
