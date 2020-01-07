@@ -21,10 +21,10 @@ $( document ).ready(function() {
             zoomType : "inner",
             cursor: "move",
         });
+
+
         $(".zoom-small").bind("click", function(e) {
             var ez =  $(this).data();
-            console.log(ez);
-            if ($(this).attr("src",ez.image) == $(".zoom_image").attr("src",ez.image))
             $(".zoom_image").attr("src",ez.image);
             $(".zoom_image").data('zoom-image',ez.zoomImage ).elevateZoom({
                 gallery:'gallery_01',
@@ -32,6 +32,14 @@ $( document ).ready(function() {
                 imageCrossfade: true,
                 zoomType : "inner",
                 cursor: "move",
+            });
+            $('.zoom-small').each(function(i, obj) {
+                if ($(this).attr("data-image") ==  $(".zoom_image").attr("src")){
+                    $(this).addClass("active");
+                }
+                else{
+                    $(this).removeClass("active");
+                }
             });
         });
     } );

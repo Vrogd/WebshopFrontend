@@ -25,4 +25,9 @@
       bottom: 15px;
     }
   }
+  .zoom-small.active{
+    img{
+      border: 3px solid  $med-blue;
+    }
+  }
 }
