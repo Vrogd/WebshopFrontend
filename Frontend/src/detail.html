@@ -10,8 +10,9 @@
     <meta name="keywords" content="webshop,fietsen,accesoires,online,cycling,merken">
     <title>Pedalo</title>
 </head>
-<body class="mx-auto">
-<div id="nav" class="pos-f-t fixed-top mx-auto">
+<body class="mx-auto px-0">
+
+<div id="nav" class="pos-f-t fixed-top mx-auto px-0">
     <nav class="navbar p-0 align-items-stretch justify-content-start">
         <div id="nav-left" class="col-lg-2 col-md-3 col-5 col-sm-6 align-items-stretch d-flex justify-content-lg-center order-3 order-md-1 my-2 my-md-0">
             <div class=" row px-lg-0 px-xl-4 align-items-stretch justify-content-lg-center justify-content-between mx-auto mx-md-0">
@@ -93,7 +94,7 @@
                     <!--type3-->
                     <a href="#"><h2 class="text-white mb-3">Componenten</h2></a>
                     <ul>
-                        <li><a href="#">Bottombracket</a></li>npm run watch
+                        <li><a href="#">Bottombracket</a></li>
                         <li><a href="#">Remkabels</a></li>
                         <li><a href="#">Rem Calipers</a></li>
                         <li><a href="#">Cassetes</a></li>
@@ -158,6 +159,25 @@
     </nav>
 </div>
 <div class="container-fluid detail">
+    <!-- Modal -->
+    <div class="modal fade" id="ModalMaattabel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalCenterTitle">Maattabel</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row py-2 detail-title">
         <div class=" col-12 col-md-6 text-md-left text-center order-md-1 order-2">
             <span>Artikelnummer: 6336-0070-001-N1905</span>
@@ -168,7 +188,7 @@
         <div class="col-lg-6 col-12">
             <!-- product + pics -->
             <div class="picdetail row">
-                <img src='images/Fenix-SL-Big.jpg' class="img-fluid zoom_image" data-zoom-image="images/Fenix-SL-Big.jpg"/>
+                <img src='images/Fenix-SL-Big.jpg' class="img-fluid zoom_image" data-zoom-image="images/Fenix-SL-Big.jpg" alt="mainpic"/>
             </div>
             <div id="gal1" class="row my-4">
                 <a class="col zoom-small px-md-1 px-0 active" data-image="images/Fenix-SL-Big.jpg" data-zoom-image="images/Fenix-SL-Big.jpg">
@@ -205,10 +225,9 @@
             </div>
 
             <div class="my-3">
-                <div class="row">
-                    <h3 class="col py-1">Kies je maat</h3>
-                    <button type="button" class="btn" data-toggle="modal" data-target="#ModalMaattabel">
-                        <h3 class="col text-right">bekijk maattabel</h3>
+                <div class="d-flex">
+                    <h3 class="col py-1 px-0">Kies je maat</h3>
+                    <button type="button" class="btn col text-right" data-toggle="modal" data-target="#ModalMaattabel">maattabel
                     </button>
 
                 </div>
