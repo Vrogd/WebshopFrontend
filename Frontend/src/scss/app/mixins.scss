@@ -54,6 +54,7 @@
   font-size: 0.8rem;
   background-color: $red-light;
   border-radius: 15px !important;
+  z-index: 999;
 }
 .iconstock:hover{
   color: $font-c-w;
@@ -95,7 +96,13 @@ button.blue-b{
 .newbut:hover{
   color: white;
 }
-
+.size{
+  @include button;
+  color: white !important;
+}
+.size:active, .size:focus {
+  background-color: $red-light !important;
+}
 @mixin price{
   font-size: 1.2rem;
   font-weight: $bold;

@@ -33,7 +33,7 @@ $( document ).ready(function() {
                 zoomType : "inner",
                 cursor: "move",
             });
-            $('.zoom-small').each(function(i, obj) {
+            $('.zoom-small').each(function() {
                 if ($(this).attr("data-image") ==  $(".zoom_image").attr("src")){
                     $(this).addClass("active");
                 }
@@ -43,5 +43,8 @@ $( document ).ready(function() {
             });
         });
     } );
+    $(".btn.size").each(function() {
+
+    });
     $(window).resize(function(){location.reload();});
 });
