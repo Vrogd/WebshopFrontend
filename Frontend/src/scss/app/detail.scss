@@ -16,13 +16,15 @@
     right: 15px;
     top: 5px;
   }
-  .price{
+  .price-big{
+    right: 0;
+    top: 0;
     p{
-      font-size: 2rem !important;
+      font-size: 2em !important;
     }
     p.price-pr{
-      font-size: 1.5rem!important;
-      bottom: 15px;
+      font-size: 1.4rem!important;
+      top: -20px;
     }
   }
   .zoom-small.active{
@@ -33,6 +35,42 @@
               0 22.3px 17.9px rgba(0, 0, 0, 0.042),
               0 100px 80px rgba(0, 0, 0, 0.07)
     ;
+    }
+  }
+  #customcounter{
+    border-radius: 10px;
+    outline: none !important;
+    a:focus{
+      background-color: $red-light;
+      color: $font-c-w;
+    }
+  }
+  #getinfoshopping{
+    span{
+      font-size: 0.9rem;
+    }
+  }
+  .readmore{
+    text-decoration: underline !important;
+    font-weight: $semibold;
+  }
+  #tabsproduct{
+    .nav-item{
+      background-color: $bg-grey;
+    }
+    font-size: 0.9rem;
+    font-weight: $semibold;
+    li{
+      .active{
+      background-color: $blue-medio;
+      color: $font-c-w;
+      }
+      a:hover{
+        color: $font-c-g!important;
+      }
+      .active:hover{
+        color: $font-c-w !important;
+      }
     }
   }
 }

@@ -161,16 +161,56 @@
 <div class="container-fluid detail">
     <!-- Modal -->
     <div class="modal fade" id="ModalMaattabel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header border-bottom-0">
                     <h3 class="modal-title" id="exampleModalCenterTitle">Maattabel</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <div class="row">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">XS</th>
+                                <th scope="col">S</th>
+                                <th scope="col">M</th>
+                                <th scope="col">L</th>
+                                <th scope="col">XL</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">Lengte Persoon</th>
+                                <td>155-166xm</td>
+                                <td>155-166xm</td>
+                                <td>155-166xm</td>
+                                <td>155-166xm</td>
+                                <td>155-166xm</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Zadelhoogste</th>
+                                <td>155-166xm</td>
+                                <td>155-166xm</td>
+                                <td>155-166xm</td>
+                                <td>155-166xm</td>
+                                <td>155-166xm</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">Seat Angle (°)</th>
+                                <td>155-166xm</td>
+                                <td>155-166xm</td>
+                                <td>155-166xm</td>
+                                <td>155-166xm</td>
+                                <td>155-166xm</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -178,13 +218,14 @@
             </div>
         </div>
     </div>
+
     <div class="row py-2 detail-title">
         <div class=" col-12 col-md-6 text-md-left text-center order-md-1 order-2">
             <span>Artikelnummer: 6336-0070-001-N1905</span>
         </div>
 
     </div>
-    <div class="row detail-info my-md-4 my-0">
+    <div class="row detail-info mb-md-4 my-0">
         <div class="col-lg-6 col-12">
             <!-- product + pics -->
             <div class="picdetail row">
@@ -213,18 +254,23 @@
             </div>
             <span class="iconstock p-2 position-absolute">In stock</span>
         </div>
-        <div class="col-lg-6 col-12 px-md-5 px-2">
+        <div class="col-lg-6 col-12 px-md-5 px-2 my-3">
+
         <!-- product + kleine opties -->
-        <h2 class="my-3">Ridley Fenix SL(2019)</h2>
-            <div>
+             <h2 class="my-4 my-md-3">Ridley Fenix SL(2019)</h2>
+            <div class="position-relative">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
                 <i class="far fa-star"></i>
                 <i class="far fa-star"></i>
+                <div class="col-6 position-absolute price-big">
+                    <p class="text-right mb-0 price-pr position-absolute pr-3 pb-4">€ 1.599,00</p>
+                    <p class="text-right mb-2 price-cro">€ 1.799,00</p>
+                </div>
             </div>
 
-            <div class="my-3">
+            <div class="my-4 my-md-3">
                 <div class="d-flex">
                     <h3 class="col py-1 px-0">Kies je maat</h3>
                     <button type="button" class="btn col text-right" data-toggle="modal" data-target="#ModalMaattabel">maattabel
@@ -232,17 +278,57 @@
 
                 </div>
 
-                <form class="my-1" method="get">
+                <form name="getsize" class="my-1" method="get">
                     <button type="button" class="btn size" value="XS">XS</button>
                     <button type="button" class="btn size" value="S">S</button>
                     <button type="button" class="btn size" value="M">M</button>
                     <button type="button" class="btn size" value="L">L</button>
                     <button type="button" class="btn size" value="XL">XL</button>
                 </form>
+                <hr class="my-3 mt-5">
+                <div class="col-12">
+                    <form id="getinfoshopping" name="getinfoshopping" method="get" class="row justify-content-center justify-content-md-start">
+                        <div class="col-2 mr-4 mr-sm-3 ">
+                            <div id="customcounter" class="row border">
+                                <a href="#" class="col-4 px-0 align-items-center justify-content-center d-flex"><i class="fas fa-minus"></i></a>
+                                <input type="text" inputmode="numeric" pattern="[0-9]*" name="quantity" value="1" rel="-1" min="1" max="9" class="form-control col-4 px-0 text-center">
+                                <a href="#" class="col-4 px-0 align-items-center justify-content-center d-flex"><i class="fas fa-plus"></i></a>
+                            </div>
 
-
+                        </div>
+                        <button type="button" class="btn detail-buy text-center col-auto" data-toggle="modal"><span class="d-lg-none d-xl-inline-block d-sm-inline-block d-none">Winkelmandje</span><i class="fas fa-shopping-cart icon ml-xl-3 ml-lg-2 ml-sm-3 ml-0 mx-2 text-center "></i></button>
+                        <button type="button" class="btn detail-buy text-center col-auto ml-3" data-toggle="modal"><span class="d-lg-none d-xl-inline-block d-sm-inline-block d-none">Favorieten</span><i class="fas fa-heart icon ml-xl-3 ml-lg-2 ml-sm-3 ml-0 mx-2 text-center"></i></button>
+                    </form>
+                </div>
+                <hr class="my-3 mb-5">
+                <div>
+                    <p class="px-1">A breathtakingly fast frameset combined with premium components makes the Specialized Venge Pro a serious contender for anyone looking for a super-aerodynamic road bike.
+                        The latest Venge has shed a serious amount of weight, while somehow becoming even more aerodynamic. With a Shimano Ultegra Di2 electronic groupset, shifting is quick and flawless,
+                        while the hydraulic disc brakes deliver modulated stopping power.
+                        A set of Roval CL 50 wheels come tubeless-ready and provide a fine mix of aerodynamic performance and stability while keeping this dream bike looking slick and ready to race.</p>
+                    <a href="#" class="col d-flex text-right justify-content-end readmore">Lees volledig</a>
+                </div>
             </div>
         </div>
+    </div>
+    <ul class="nav nav-tabs row" id="tabsproduct" role="tablist">
+        <li class="nav-item col-lg-4 px-1 border-none text-center text-uppercase">
+            <a class="active d-flex justify-content-center py-2" id="home-tab" data-toggle="tab" href="#omschrijving" role="tab" aria-controls="home" aria-selected="true">Omschrijving</a>
+        </li>
+        <li class="nav-item col-lg-4 px-1 border-none text-center text-uppercase">
+            <a class="d-flex justify-content-center py-2" id="profile-tab" data-toggle="tab" href="#review" role="tab" aria-controls="profile" aria-selected="false">Reviews</a>
+            <!-- revieuw -->
+        </li>
+        <li class="nav-item col-lg-4 px-1 border-none text-center text-uppercase">
+            <a class="d-flex justify-content-center py-2" id="contact-tab" data-toggle="tab" href="#vragen" role="tab" aria-controls="contact" aria-selected="false">Vragen</a>
+        </li>
+    </ul>
+    <div class="tab-content row" id="myTabContent">
+        <div class="tab-pane fade show active" id="omschrijving" role="tabpanel" aria-labelledby="home-tab">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aperiam atque commodi cumque dolorem, error explicabo illum itaque, libero minus neque, nulla quos recusandae sed unde vitae voluptas voluptatem.
+        </div>
+        <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        <div class="tab-pane fade" id="vragen" role="tabpanel" aria-labelledby="contact-tab">test</div>
     </div>
 </div>
 <footer class="container-fluid position-relative">

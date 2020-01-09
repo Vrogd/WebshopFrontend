@@ -103,6 +103,15 @@ button.blue-b{
 .size:active, .size:focus {
   background-color: $red-light !important;
 }
+button.detail-buy{
+  @include button;
+  background-color: $med-blue;
+  font-weight: $semibold;
+  border-radius: 5px !important;
+}
+button.detail-buy:hover{
+  color: $font-c-w;
+}
 @mixin price{
   font-size: 1.2rem;
   font-weight: $bold;

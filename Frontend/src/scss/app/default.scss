@@ -189,6 +189,14 @@ body {
   .borderright{
     border-right: solid rgba($blue-medio,0.6) 2px !important;
   }
+  .price-big{
+    p{
+      font-size: 2.4em !important;
+    }
+    p.price-pr{
+      font-size: 1.8rem!important;
+    }
+  }
 }
 @media (min-width: 1200px) {
   .carousel-caption{
