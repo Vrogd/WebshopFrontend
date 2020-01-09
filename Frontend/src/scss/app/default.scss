@@ -12,7 +12,7 @@ body {
   h2, h3 {
     font-size: 1.28rem;
     font-weight: $bold;
-    letter-spacing: -1.2px;
+    letter-spacing: -0.8px;
   }
 
   h2.bold {
@@ -202,7 +202,6 @@ body {
   .carousel-caption{
     h2{
       font-size: 3.8rem !important;
-      font-weight: $extrabold !important;
     }
     button{
       font-size: 1.15rem;

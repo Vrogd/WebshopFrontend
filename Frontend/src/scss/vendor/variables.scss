@@ -14,7 +14,7 @@ $hover-col: #c8bfc7;
 
 /*fonts*/
 $def-font-size:14px;
-$font-main:'Quicksand';
+$font-main:'Titillium Web';
 @include media-breakpoint-up(xl) {
   $def-font-size: 18px;
 }

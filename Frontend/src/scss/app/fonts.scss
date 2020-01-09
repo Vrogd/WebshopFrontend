@@ -2,8 +2,8 @@
 $fontface-path:'../fonts';
 
 @font-face {
-  font-family: 'Quicksand';
-  @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap');
+  font-family: 'Titillium Web';
+  @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,900&display=swap');;
 }
 $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';

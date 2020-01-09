@@ -56,13 +56,15 @@
   }
   #tabsproduct{
     .nav-item{
-      background-color: $bg-grey;
+      a{
+        background-color: $bg-grey;
+      }
     }
     font-size: 0.9rem;
     font-weight: $semibold;
     li{
       .active{
-      background-color: $blue-medio;
+      background-color: $med-blue;
       color: $font-c-w;
       }
       a:hover{
@@ -72,6 +74,15 @@
         color: $font-c-w !important;
       }
     }
+
+  }
+  .tab-content{
+    ul{
+      .list-group-item{
+        padding: 0.4rem 1.25rem !important;
+      }
+    }
+
   }
 }
 .modal-open {
