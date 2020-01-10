@@ -81,14 +81,14 @@ body{
       left: 0;
       right: unset;
       width: 100%;
-      background-color: rgba($dark-blue,0.95);
+      background-color: rgba($dark-blue,0.85);
       .foutmessage{
         color: $red-light;
         font-size: 0.7rem;
       }
       .form-control{
         height: 1.8rem !important;
-        background-color: rgba($blue-medio,0.8);
+        background-color: rgba($med-blue,0.6);
         border-radius: 15px;
         color: $font-c-w;
       }

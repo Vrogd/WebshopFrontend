@@ -27,7 +27,7 @@
 .icon-select{
   @include icon;
   font-size: $iconsize*0.7;
-  background-color: rgba($med-blue,1);
+  background-color: rgba($dark-blue,1);
   box-shadow: 0 0 0 2px $med-blue;
   width: $icon-m-size *0.8 !important;
   height: $icon-m-size *0.8 !important;
@@ -85,7 +85,7 @@ button.blue-b{
 }
 button.profiletab{
   @include button;
-  background-color: $dark-blue !important;
+  background-color: $med-blue !important;
 }
 
 .newbut{

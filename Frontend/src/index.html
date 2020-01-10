@@ -48,7 +48,7 @@
     <!--menu en search-->
     <div class="position-absolute w-100">
         <div class="collapse " id="navbarToggleExternalSearch">
-            <div class="bg-med-blue">
+            <div class="bg-blue-medio">
                 <form class="form-inline my-lg-0 position-relative mx-auto">
                     <input class="form-control col py-0" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn my-sm-0 position-relative" type="submit"><i class="fas fa-search icon"></i></button>
@@ -86,7 +86,7 @@
                         <li><a href="overview.html">GPS computer</a></li>
                         <li><a href="overview.html">Fietssloten</a></li>
                         <li><a href="overview.html">Indoor</a></li>
-                        <li class="highlight-link"><a href="#">Sale</a></li>
+                        <li class="highlight-link"><a href="overview.html">Sale</a></li>
                     </ul>
                 </div>
                 <div class="col-lg col-md-6 borderright pl-md-4 pl-5 my-lg-4 my-2 order-lg-2 order-4">
@@ -140,18 +140,19 @@
     <!--profile-->
     <div class="collapse position-absolute" id="navbarToggleExternalprofile">
         <form name="Loginprofiletop" method="get" class="col-12">
-            <div class="form-group px-1 mb-0 mt-3 foutmessage">
-                <label class="mx-1 errormessage">Naam en passwoord matchen niet</label>
-            </div>
+
             <div class="form-group px-1 mb-0">
                 <label for="inputName" class="mx-1">Naam</label>
                 <input type="text" class="form-control" id="inputName">
             </div>
-            <div class="form-group px-1 mb-0">
+            <div class="form-group px-1 mt-2 mb-0">
                 <label for="inputPassword" class="mx-1">Paswoord</label>
                 <input type="password" class="form-control" id="inputPassword">
             </div>
-            <div class="row confirmlogin mx-1 my-4 my-sm-3 justify-content-around">
+            <div class="form-group px-1 py-1 foutmessage">
+                <label class="mx-1 errormessage">Naam en passwoord matchen niet</label>
+            </div>
+            <div class="row confirmlogin mx-1 my-3 justify-content-around">
                 <button class="profiletab col-12 mb-1">Login</button> <button class="profiletab col-12">Register</button>
             </div>
         </form>
