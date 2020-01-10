@@ -83,6 +83,10 @@ button.blue-b{
   background-color: $med-blue !important;
   border-bottom: 2px outset $red-light;
 }
+button.profiletab{
+  @include button;
+  background-color: $dark-blue !important;
+}
 
 .newbut{
   @include button;

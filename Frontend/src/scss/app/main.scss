@@ -76,6 +76,23 @@ body{
         min-width: 80px;
       }
     }
+    #navbarToggleExternalprofile{
+      border-radius: 0;
+      left: 0;
+      right: unset;
+      width: 100%;
+      background-color: rgba($dark-blue,0.95);
+      .foutmessage{
+        color: $red-light;
+        font-size: 0.7rem;
+      }
+      .form-control{
+        height: 1.8rem !important;
+        background-color: rgba($blue-medio,0.8);
+        border-radius: 15px;
+        color: $font-c-w;
+      }
+    }
   }
   .bread , .breadcrumb{
     background-color: $med-blue !important;
