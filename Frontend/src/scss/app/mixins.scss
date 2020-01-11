@@ -60,6 +60,12 @@
   color: $font-c-w;
 }
 
+.iconprofile{
+  @include icon;
+  font-size: 2.2rem;
+  color: $dark-blue;
+  border: 2px $dark-blue solid;
+}
 @mixin button{
   background-color: $blue-medio;
   color: $font-c-w;

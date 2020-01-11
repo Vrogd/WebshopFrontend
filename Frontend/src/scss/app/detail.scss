@@ -82,7 +82,33 @@
         padding: 0.4rem 1.25rem !important;
       }
     }
-
+    #review{
+      h4{
+      font-size: 0.8rem;
+       }
+        .shortinfo{
+          background-color: $bg-grey;
+          border-radius: 1rem;
+          h2{
+            font-weight: $semibold;
+          }
+          .verifiedbuyer{
+            right: 0px;
+            top: 10px;
+            .fas{
+              font-size: 1.8rem;
+              line-height: 1rem;
+            }
+            .fa-check{
+              color: $font-c-w;
+              font-size: 0.8rem;
+            }
+          }
+        }
+        .writerev{
+          background-color: $bg-grey;
+        }
+    }
   }
 }
 .modal-open {
