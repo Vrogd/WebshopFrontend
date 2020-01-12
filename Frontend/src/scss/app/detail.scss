@@ -38,7 +38,6 @@
     }
   }
   #customcounter{
-    border-radius: 10px;
     outline: none !important;
     a:focus{
       background-color: $red-light;
@@ -86,9 +85,8 @@
       h4{
       font-size: 0.8rem;
        }
-        .shortinfo{
-          background-color: $bg-grey;
-          border-radius: 1rem;
+        .shortinfo,.form-control{
+          background-color: lighten($bg-grey,5) !important;
           h2{
             font-weight: $semibold;
           }
@@ -98,6 +96,7 @@
             .fas{
               font-size: 1.8rem;
               line-height: 1rem;
+              color: $blue-medio;
             }
             .fa-check{
               color: $font-c-w;
@@ -106,7 +105,9 @@
           }
         }
         .writerev{
-          background-color: $bg-grey;
+          #Reviewlong{
+            resize: none;
+          }
         }
     }
   }

@@ -81,6 +81,9 @@ button.blue-b{
   @include button;
   pointer-events: auto !important;
 }
+.blue-b:hover{
+  color: $font-c-w;
+}
 
 .fea{
   @include button;

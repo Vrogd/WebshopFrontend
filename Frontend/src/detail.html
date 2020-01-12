@@ -406,7 +406,7 @@
                             </div>
                             <div class="col-lg-10 col-md-9 col-sm-8 col-12">
                                 <!-- accountinfo -->
-                                <div class="row shortinfo pt-3 pb-1 px-2">
+                                <div class="row shortinfo pt-3 pb-1 px-2 border-15px">
                                     <div class="col-11">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -432,7 +432,7 @@
                             </div>
                         </div>
                     </div>
-                    <hr class="my-2 col-10 mx-auto">
+                    <hr class="my-3 col-10 mx-auto">
                     <div class="col-md-10 mx-auto mt-3">
                         <div class="row review-current p-2">
                             <div class="col-lg-2 col-md-3 col-sm-4 col-12 justify-content-center text-center text-sm-left mb-2 mb-sm-0">
@@ -452,7 +452,7 @@
                             </div>
                             <div class="col-lg-10 col-md-9 col-sm-8 col-12">
                                 <!-- accountinfo -->
-                                <div class="row shortinfo pt-3 pb-1 px-2">
+                                <div class="row shortinfo pt-3 pb-1 px-2 border-15px">
                                     <div class="col-11">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -478,17 +478,33 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 writerev">
+                    <hr class="my-3 col-10 mx-auto">
+                    <div class="col-md-10 mx-auto writerev mt-3">
                         <div class="row">
-                            <div class="col-12">
-                                <label>Rating :</label>
+                            <div class="col-8 mt-3">
+                                <div class="row align-items-center">
+                                    <label for="titel" class="col-auto">Titel :</label>
+                                    <input id="titel" class="form-control col border-10px" type="text">
+                                </div>
+
                             </div>
-                            <div class="col-12">
-                                <label>Review titel :</label>
+                            <div class="col-4 mt-3 align-items-center d-flex">
+                            <label>Rating :</label>
+                                <div class="rateit d-flex align-items-center mx-3 pb-2">
+                                    <span class="far fa-star" id="star1" onclick="addstars(this,1)"></span>
+                                    <span class="far fa-star" id="star2" onclick="addstars(this,2)"></span>
+                                    <span class="far fa-star" id="star3" onclick="addstars(this,3)"></span>
+                                    <span class="far fa-star" id="star4" onclick="addstars(this,4)"></span>
+                                    <span class="far fa-star" id="star5" onclick="addstars(this,5)"></span>
+                                </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 my-2">
                                 <label for="Reviewlong">Review :</label>
-                                <textarea id="Reviewlong" class="form-control-plaintext form-control"></textarea>
+                                <textarea id="Reviewlong" class="form-control-plaintext form-control px-2 border-10px" rows="5" cols="20"></textarea>
+                                <div class="my-2 d-flex justify-content-end">
+                                    <button class="btn blue-b" value="Send">Annuleer</button>
+                                    <button class="btn blue-b mx-3" type="submit" value="Send">Bewaar</button>
+                                </div>
                             </div>
                         </div>
 
