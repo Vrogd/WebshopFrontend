@@ -90,9 +90,6 @@
       }
         .shortinfo,.form-control ,.vraag{
           background-color: lighten($bg-grey,5) !important;
-          h2{
-            font-weight: $regular;
-          }
           .verifiedbuyer{
             right: 0px;
             top: 10px;
@@ -108,9 +105,6 @@
           }
         }
         .writerev{
-          h3{
-            font-weight: $regular !important;
-          }
           .Reviewlong,.Antwoordlong{
             resize: none;
           }

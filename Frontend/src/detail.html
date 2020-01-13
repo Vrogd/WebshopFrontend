@@ -15,7 +15,7 @@
 <div id="nav" class="pos-f-t fixed-top mx-auto px-0">
     <nav class="navbar p-0 align-items-stretch justify-content-start">
         <div id="nav-left" class="col-lg-2 col-md-3 col-5 col-sm-6 align-items-stretch d-flex justify-content-lg-center order-3 order-md-1 my-2 my-md-0">
-            <div class=" row px-lg-0 px-xl-4 align-items-stretch justify-content-lg-center justify-content-between mx-auto mx-md-0">
+            <div class=" row px-lg-0 px-xl-4 align-items-stretch justify-content-lg-center justify-content-end ml-auto mx-md-0">
                 <button id="nav-search" class="navbar-toggler col-6 px-4 borderleft" type="button" data-toggle="collapse" data-target="#navbarToggleExternalSearch" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-search icon"></i>
                 </button>
@@ -139,12 +139,12 @@
         </div>
     </div>
     <!--profile-->
-    <div class="collapse position-absolute" id="navbarToggleExternalprofile">
+    <div class="collapse position-absolute col-auto" id="navbarToggleExternalprofile">
         <form name="Loginprofiletop" method="get" class="col-12">
-            <div class="row confirmlogin mx-0 my-3 justify-content-around">
-                <button class="profiletab col-12 mb-1">Profiel</button>
-                <button class="profiletab col-12 mb-1">Bestellingen</button>
-                <button class="profiletab col-12">Log out</button>
+            <div class="d-flex confirmlogin mx-0 my-3 justify-content-around flex-column">
+                <button class="profiletab col-auto mb-1">Profiel</button>
+                <button class="profiletab col-auto mb-1">Bestellingen</button>
+                <button class="profiletab col-auto">Log out</button>
             </div>
         </form>
     </div>
@@ -165,7 +165,7 @@
 <div class="container-fluid detail">
     <!-- Modal -->
     <div class="modal fade" id="ModalMaattabel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-header border-bottom-0">
                     <h3 class="modal-title" id="exampleModalCenterTitle">Maattabel</h3>
@@ -294,9 +294,9 @@
                     <form id="getinfoshopping" name="getinfoshopping" method="get" class="row justify-content-center justify-content-md-start">
                         <div class="col-2 mr-4 mr-sm-3 ">
                             <div id="customcounter" class="row border">
-                                <a href="#" class="col-4 px-0 align-items-center justify-content-center d-flex"><i class="fas fa-minus"></i></a>
-                                <input type="text" inputmode="numeric" pattern="[0-9]*" name="quantity" value="1" class="form-control col-4 px-0 text-center">
-                                <a href="#" class="col-4 px-0 align-items-center justify-content-center d-flex"><i class="fas fa-plus"></i></a>
+                                <a href="#" onclick="return false;" class="col-4 px-0 align-items-center justify-content-center d-flex"><i class="fas fa-minus"></i></a>
+                                <input type="text" name="quantity" value="1" class="form-control col-4 px-0 text-center" data-minval="1" data-maxval="9">
+                                <a href="#" onclick="return false;"  class="col-4 px-0 align-items-center justify-content-center d-flex"><i class="fas fa-plus"></i></a>
                             </div>
 
                         </div>
@@ -310,7 +310,7 @@
                         The latest Venge has shed a serious amount of weight, while somehow becoming even more aerodynamic. With a Shimano Ultegra Di2 electronic groupset, shifting is quick and flawless,
                         while the hydraulic disc brakes deliver modulated stopping power.
                         A set of Roval CL 50 wheels come tubeless-ready and provide a fine mix of aerodynamic performance and stability while keeping this dream bike looking slick and ready to race.</p>
-                    <a href="#omschrijving"  class="col d-flex text-right justify-content-end readmore">Lees volledig</a>
+                    <a href="" onclick="activaTab('omschrijving');"  class="col d-flex text-right justify-content-end readmore">Lees volledig</a>
                 </div>
             </div>
         </div>
@@ -367,7 +367,7 @@
         <div class="tab-pane fade col-12" id="review" role="tabpanel" aria-labelledby="profile-tab">
             <div class="row mx-2 my-4">
                 <!-- revieuws -->
-                <form name="reviews" method="get">
+                <form name="reviews" id="reviews" method="get">
                     <nav aria-label="Page navigation example" class="d-flex justify-content-center col-12">
                         <!-- pages -->
                         <ul class="pagination my-auto">
@@ -426,7 +426,7 @@
                                         <i class="fas fa-check fa-stack-1x"></i>
                                         </span>
                                     </div>
-                                    <h2 class="col-12 my-1">Lorem ipsum dolor</h2>
+                                    <p class="col-12 my-1">Lorem ipsum dolor</p>
                                 </div>
                                 <div class="row longinfo my-3 px-2">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto expedita
@@ -478,7 +478,7 @@
                                         <i class="fas fa-check fa-stack-1x"></i>
                                         </span>
                                     </div>
-                                    <h2 class="col-12 my-1">Lorem ipsum dolor</h2>
+                                    <p class="col-12 my-1">Lorem ipsum dolor</p>
                                 </div>
                                 <div class="row longinfo my-3 px-2">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto expedita
@@ -490,7 +490,7 @@
                         </div>
                     </div>
                     <div class="col-md-10 mx-auto mt-3 d-flex justify-content-end ">
-                        <button id="postrev" class="btn blue-b" type="button" data-toggle="collapse" data-target="#addrev" aria-expanded="false" aria-controls="collapseExample">
+                        <button id="postrev" class="btn blue-b" type="button" data-toggle="collapse" data-target="#addrev" aria-expanded="false" aria-controls="addrev">
                             Review
                         </button>
                     </div>
@@ -501,7 +501,7 @@
                                 <div class="col-12 col-sm-6 col-md-7 mt-2">
                                     <div class="row align-items-center">
                                         <h3 class="col-auto">Titel :</h3>
-                                        <input id="titel" class="form-control col border-10px" type="text">
+                                        <input id="Reviewtitel" class="form-control col border-10px" type="text">
                                     </div>
 
                                 </div>
@@ -526,26 +526,26 @@
         </div>
         <div class="tab-pane fade col-12" id="vragen" role="tabpanel" aria-labelledby="contact-tab">
             <div class="row mx-2 my-4">
-                <form name="vragen" method="get" class="col-sm-10 mx-auto">
+                <form name="vragen" id="vragenform" method="get" class="col-sm-10 mx-auto">
                     <div id="vragen+antwoorden" class="row">
                         <div class="col-12 vraag p-2 shortinfo my-2 pt-3 pb-1 px-2 border-15px">
                             <div class="d-flex justify-content-between">
                                 <h3 class="col-auto">Jhon Doe</h3>
                                 <span class="mx-2 justify-content-end col-auto"> 1/1/2020 </span>
                             </div>
-                            <h2 class="my-1 col-12 col-sm-auto">Lorem ipsum dolor Lorem ? </h2>
+                            <p class="my-1 col-12 col-sm-auto">Lorem ipsum dolor Lorem ? </p>
                         </div>
                         <div class="col-11 offset-1 vraag p-2 shortinfo my-2 pt-3 pb-1 px-2 border-15px">
                             <div class="d-flex justify-content-between">
                                 <h3 class="col-auto staff">Jeff (staff)</h3>
                                 <span class="mx-2 justify-content-end col-auto"> 3/2/2022 </span>
                             </div>
-                            <h2 class="my-1 col-12 col-sm-auto">Lorem ipsum dolor sit amet.</h2>
+                            <p class="my-1 col-12 col-sm-auto">Lorem ipsum dolor sit amet.</p>
 
                         </div>
                     </div>
                     <div class=" row mt-3 d-flex justify-content-end ">
-                        <button id="postvraag" class="btn blue-b" type="button" data-toggle="collapse" data-target="#addvraag" aria-expanded="false" aria-controls="collapseExample">
+                        <button id="postvraag" class="btn blue-b" type="button" data-toggle="collapse" data-target="#addvraag" aria-expanded="false" aria-controls="addvraag">
                             Post een vraag
                         </button>
                     </div>
@@ -571,12 +571,12 @@
 </div>
 <footer class="container-fluid position-relative">
     <div class="row pt-5 pb-2 pb-lg-4">
-        <div class="col-lg-4 offset-lg-1 col-md-6">
+        <div class="col-lg-4 offset-md-1 col-md-5 px-mx-0">
             <img class="img-fluid mx-auto mx-md-0 d-block mb-4" src="images/logo-small.png" alt="logo">
             <p class="text-md-left text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra </p>
+                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
         </div>
-        <div class="col-lg-1 offset-lg-1 col-md-3 text-md-left text-center">
+        <div class="col-xl-1 col-lg-2 offset-xl-1 col-md-3 text-md-left text-center">
             <h2>Help</h2>
             <ul>
                 <li><a href="#">lorem ipsum</a></li>
@@ -585,7 +585,7 @@
                 <li><a href="#">lorem ipsum</a></li>
             </ul>
         </div>
-        <div class="col-lg-1 offset-lg-1 col-md-3 text-md-left text-center">
+        <div class="col-xl-1 col-lg-2 offset-xl-1 col-md-3 text-md-left text-center">
             <h2>Over ons</h2>
             <ul>
                 <li><a href="#">lorem ipsum</a></li>

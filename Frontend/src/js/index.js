@@ -46,15 +46,23 @@ $( document ).ready(function() {
     $('.starrr').starrr();
     $('#addrev').on('shown.bs.collapse',function(){
         $('#postrev').text('Annuleer');
+
     });
     $('#addrev').on('hidden.bs.collapse',function(){
         $('#postrev').text('Review');
+        $('#Reviewtitel').val("");
+        $('.Reviewlong').val("");
     });
     $('#addvraag').on('shown.bs.collapse',function(){
         $('#postvraag').text('Annuleer');
     });
     $('#addvraag').on('hidden.bs.collapse',function(){
         $('#postvraag').text('Post een vraag');
+        $('.Antwoordlong').val("");
     });
     $(window).resize(function(){location.reload();});
+    function activaTab(tab){
+        $('a[href="#' + tab + '"]').tab('show');
+        return false;
+    }
 });
