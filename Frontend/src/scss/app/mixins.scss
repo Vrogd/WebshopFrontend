@@ -125,6 +125,13 @@ button.detail-buy{
 button.detail-buy:hover{
   color: $font-c-w;
 }
+.btn-secondary{
+  background-color: $blue-medio;
+  border-radius: 5px !important;
+}
+.btn-secondary:hover{
+  background-color: $med-blue;
+}
 @mixin price{
   font-size: 1.2rem;
   font-weight: $bold;
