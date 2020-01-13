@@ -81,14 +81,17 @@
         padding: 0.4rem 1.25rem !important;
       }
     }
-    #review{
+    #review,#vragen{
       h4{
       font-size: 0.8rem;
        }
-        .shortinfo,.form-control{
+      h3.staff{
+        color: $red-light;
+      }
+        .shortinfo,.form-control ,.vraag{
           background-color: lighten($bg-grey,5) !important;
           h2{
-            font-weight: $semibold;
+            font-weight: $regular;
           }
           .verifiedbuyer{
             right: 0px;
@@ -105,8 +108,16 @@
           }
         }
         .writerev{
-          #Reviewlong{
+          h3{
+            font-weight: $regular !important;
+          }
+          .Reviewlong,.Antwoordlong{
             resize: none;
+          }
+          .starrr a {
+            font-size: 1rem;
+            cursor: pointer;
+            color: $dark-blue;
           }
         }
     }

@@ -43,8 +43,18 @@ $( document ).ready(function() {
             });
         });
     } );
-    $(".btn.size").each(function() {
-
+    $('.starrr').starrr();
+    $('#addrev').on('shown.bs.collapse',function(){
+        $('#postrev').text('Annuleer');
+    });
+    $('#addrev').on('hidden.bs.collapse',function(){
+        $('#postrev').text('Review');
+    });
+    $('#addvraag').on('shown.bs.collapse',function(){
+        $('#postvraag').text('Annuleer');
+    });
+    $('#addvraag').on('hidden.bs.collapse',function(){
+        $('#postvraag').text('Post een vraag');
     });
     $(window).resize(function(){location.reload();});
 });
