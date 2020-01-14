@@ -40,7 +40,7 @@
                 <button class="navbar-toggler col-auto px-4 borderleft" type="button">
                     <i class="fas fa-heart icon"></i><span class="badge rounded-circle badge-light position-absolute">4</span>
                 </button>
-                <button class="navbar-toggler col-auto px-4 borderleft borderright" type="button">
+                <button class="navbar-toggler col-auto px-4 borderleft borderright" type="button" onclick="location.href='cart.html';">
                     <i class="fas fa-shopping-cart icon"></i><span class="badge rounded-circle badge-light position-absolute">2</span>
                 </button>
             </div>
@@ -152,7 +152,8 @@
 <div class="mt-5 pt-5 pt-md-0 bread">
     <nav aria-label="breadcrumb">
         <div class="pt-5">
-            <ol class="breadcrumb justify-content-center mb-0 py-5">
+            <h2 class="text-center bold mt-3 mb-0">Ridley</h2>
+            <ol class="breadcrumb justify-content-center mb-0 pb-5 pt-1">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item"><a href="overview.html">Fietsen</a></li>
                 <li class="breadcrumb-item"><a href="overview.html">Road fietsen</a></li>
@@ -295,7 +296,7 @@
                         <div class="col-2 mr-4 mr-sm-3 ">
                             <div id="customcounter" class="row border">
                                 <a href="#" onclick="return false;" class="col-4 px-0 align-items-center justify-content-center d-flex"><i class="fas fa-minus"></i></a>
-                                <input type="text" name="quantity" value="1" class="form-control col-4 px-0 text-center" data-minval="1" data-maxval="9">
+                                <input type="text" name="quantity" value="1" class="form-control col-4 px-0 text-center" data-minval="1" data-maxval="9" disabled>
                                 <a href="#" onclick="return false;"  class="col-4 px-0 align-items-center justify-content-center d-flex"><i class="fas fa-plus"></i></a>
                             </div>
 
@@ -316,15 +317,15 @@
         </div>
     </div>
     <ul class="nav nav-tabs row" id="tabsproduct" role="tablist">
-        <li class="nav-item col-md-4 border-none text-center px-lg-1 px-0">
-            <a class="active d-flex justify-content-center py-2" id="home-tab" data-toggle="tab" href="#omschrijving" role="tab" aria-controls="omschrijving" aria-selected="true">Omschrijving</a>
+        <li class="nav-item col-md-4 border-none text-center px-0">
+            <a class="active d-flex justify-content-center py-3" id="home-tab" data-toggle="tab" href="#omschrijving" role="tab" aria-controls="omschrijving" aria-selected="true">Omschrijving</a>
         </li>
-        <li class="nav-item col-md-4 border-none text-center px-lg-1 px-0">
-            <a class="d-flex justify-content-center py-2" id="profile-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Reviews</a>
+        <li class="nav-item col-md-4 mt-2 mt-md-0 border-none text-center px-md-1 px-0">
+            <a class="d-flex justify-content-center py-3" id="profile-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Reviews</a>
 
         </li>
-        <li class="nav-item col-md-4 border-none text-center px-lg-1 px-0">
-            <a class="d-flex justify-content-center py-2" id="contact-tab" data-toggle="tab" href="#vragen" role="tab" aria-controls="vragen" aria-selected="false">Vragen</a>
+        <li class="nav-item col-md-4 mt-2 mt-md-0 border-none text-center px-0">
+            <a class="d-flex justify-content-center py-3" id="contact-tab" data-toggle="tab" href="#vragen" role="tab" aria-controls="vragen" aria-selected="false">Vragen</a>
         </li>
     </ul>
     <div class="tab-content row">
