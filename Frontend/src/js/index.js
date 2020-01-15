@@ -61,8 +61,14 @@ $( document ).ready(function() {
         $('.Antwoordlong').val("");
     });
     $(window).resize(function(){location.reload();});
-    function activaTab(tab){
+    $('.cont').on("click", function (event) {
+        tab = $(event.target).parents('.tab-pane').next().attr("id");
         $('a[href="#' + tab + '"]').tab('show');
         return false;
-    }
+    });
+    $('.prev').on("click", function (event) {
+        tab = $(event.target).parents('.tab-pane').prev().attr("id");
+        $('a[href="#' + tab + '"]').tab('show');
+        return false;
+    });
 });

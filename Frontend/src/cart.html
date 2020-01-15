@@ -152,7 +152,7 @@
 <div class="mt-5 pt-5 pt-md-0 bread">
     <nav aria-label="breadcrumb">
         <div class="pt-5">
-            <h2 class="text-center bold mt-3 mb-0">Shoppingcart</h2>
+            <h2 class="text-center bold mt-5 mt-sm-3 mb-0">Shoppingcart</h2>
             <ol class="breadcrumb justify-content-center mb-0 pb-5 pt-1">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Shoppingcart</li>
@@ -164,21 +164,21 @@
 <div class="container-fluid detail">
     <!-- info vragen -->
     <ul class="nav nav-tabs row" id="tabscart" role="tablist">
-        <li class="nav-item col-md-4 border-none text-center px-0">
-            <a class="active d-flex justify-content-center py-3" id="home-tab" data-toggle="tab" href="#Checkout" role="tab" aria-controls="Checkout" aria-selected="true">Checkout</a>
+        <li class="nav-item col-md-4 border-none text-center px-0 mt-2 mt-md-0">
+            <a class="active d-flex justify-content-center py-3" id="Checkout-tab" data-toggle="tab" href="#Checkout" role="tab" aria-controls="Checkout" aria-selected="true">Checkout</a>
         </li>
         <li class="nav-item col-md-4 mt-2 mt-md-0 border-none text-center px-md-1 px-0">
-            <a class="d-flex justify-content-center py-3" id="profile-tab" data-toggle="tab" href="#Shipping" role="tab" aria-controls="Shipping" aria-selected="false">Shipping information</a>
+            <a class="d-flex justify-content-center py-3" id="Shipping-tab" data-toggle="tab" href="#Shipping" role="tab" aria-controls="Shipping" aria-selected="false">Shipping information</a>
         </li>
         <li class="nav-item col-md-4 mt-2 mt-md-0 border-none text-center px-0">
-            <a class="d-flex justify-content-center py-3" id="contact-tab" data-toggle="tab" href="#Payment" role="tab" aria-controls="Payment" aria-selected="false">Payment</a>
+            <a class="d-flex justify-content-center py-3" id="Payment-tab" data-toggle="tab" href="#Payment" role="tab" aria-controls="Payment" aria-selected="false">Payment</a>
         </li>
     </ul>
     <div class="tab-content row">
         <div class="tab-pane fade show active col-12" id="Checkout" role="tabpanel" aria-labelledby="home-tab">
-            <form name="overzichtproducten" method="get">
+            <form name="overzichtproducten" id="overzichtenproducten" method="get">
 
-                <div class="row justify-content-center align-items-center border-bottom">
+                <div class="row justify-content-center align-items-center border-bottom py-md-3 py-0">
                     <div class="col-md-2 col-sm-4 col-12 order-1">
                         <a href="detail.html">
                             <img src="images/Fenix-SL-Big.jpg" class="img-fluid" alt="artic">
@@ -206,7 +206,7 @@
                         <a href="#" class=""><i class="fas fa-times"></i></a>
                     </div>
                 </div>
-                <div class="row justify-content-center align-items-center border-bottom">
+                <div class="row justify-content-center align-items-center border-bottom py-md-3 py-0">
                     <div class="col-md-2 col-sm-4 col-12 order-1">
                         <a href="detail.html">
                             <img src="images/Fenix-SL-Big.jpg" class="img-fluid" alt="artic">
@@ -234,29 +234,35 @@
                         <a href="#" class=""><i class="fas fa-times"></i></a>
                     </div>
                 </div>
-                <div class="row justify-content-start align-items-center border-bottom bg-grey py-2">
+                <div class="row justify-content-start align-items-center border-bottom py-2">
                     <div class="col-md-6 mt-3">
                         <div class="row">
-                            <div class="col-8 mx-auto">
-                                <div class="row">
-                                    <input class="form-control col py-0 border-15px mr-5" type="search" placeholder="promocode">
-                                    <button class="btn detail-buy" type="button">Voeg Promotie Toe</button>
+                            <div class="col-auto offset-lg-2 mx-auto">
+                                <div class="row mx-2 mx-sm-0">
+                                    <input class="form-control col border-10px mr-3" type="search" placeholder="promo code">
+                                    <button class="btn detail-buy" type="button">Activeer Code</button>
                                 </div>
-                                <label class="foutmessage">Promo code bestaat niet</label>
+                                <label class="foutmessage ml-2">*Promo code bestaat niet</label>
                             </div>
                         </div>
 
 
 
                     </div>
-                    <div class="col-md-6 justify-content-center my-3">
+                    <div class="col-md-6 justify-content-center my-3 prices">
                         <div class="row">
-                            <div class="col-6 offset-1">
-                                <p class="text-right mb-2 price"><span>Btw : </span>21%</p>
-                                <p class="text-right mb-2 price"><span>Totaal : </span>€ 3.599,00</p>
+                            <div class="col-md-6 col-12 offset-lg-1 offset-md-3 offset-0">
+                                <p class="text-md-right text-center mb-2"><span>Verzendkosten : </span>€ 9,99</p>
+                                <p class="text-md-right text-center mb-2"><span>Btw : </span>21%</p>
+                                <p class="text-md-right text-center mb-2"><span>Totaal : </span>€ 3.599,00</p>
                             </div>
                         </div>
 
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center bg-med-blue">
+                    <div class="col-12 my-3">
+                        <a href="#" class="btn btn-next-pre btn-block cont"> <i class="fas fa-long-arrow-alt-right mx-3"></i></a>
                     </div>
                 </div>
             </form>
@@ -265,9 +271,21 @@
         </div>
         <div class="tab-pane fade col-12" id="Shipping" role="tabpanel" aria-labelledby="profile-tab">
             bkbsad;sad
+            <div class="row justify-content-center align-items-center bg-med-blue">
+                <div class="col-6 my-3">
+                    <a href="" class="btn btn-next-pre btn-block prev"><i class="fas fa-long-arrow-alt-left mx-3"></i> </a>
+                </div>
+                <div class="col-6 my-3">
+                    <a href="" class="btn btn-next-pre btn-block cont"> <i class="fas fa-long-arrow-alt-right mx-3"></i></a>
+                </div>
+            </div>
         </div>
         <div class="tab-pane fade col-12" id="Payment" role="tabpanel" aria-labelledby="contact-tab">
-
+            <div class="row justify-content-center align-items-center bg-med-blue">
+                <div class="col-12 my-3">
+                    <a href="" class="btn btn-next-pre btn-block prev"><i class="fas fa-long-arrow-alt-left mx-3"></i> </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

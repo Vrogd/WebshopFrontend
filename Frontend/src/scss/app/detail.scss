@@ -39,6 +39,9 @@
   }
   .customcounter{
     outline: none !important;
+      a:focus{
+        color: $red-light;
+      }
   }
   #getinfoshopping{
     span{
@@ -77,7 +80,7 @@
         padding: 0.4rem 1.25rem !important;
       }
     }
-    #review,#vragen{
+    #review,#vragen, #overzichtenproducten{
       h3.staff{
         color: $red-light;
       }

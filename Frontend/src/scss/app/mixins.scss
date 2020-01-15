@@ -27,8 +27,8 @@
 .icon-select{
   @include icon;
   font-size: $iconsize*0.7;
-  background-color: rgba($dark-blue,1);
-  box-shadow: 0 0 0 2px $med-blue;
+  background-color: rgba($med-blue,1);
+  box-shadow: 0 0 20px rgba($med-blue,0.85);
   width: $icon-m-size *0.8 !important;
   height: $icon-m-size *0.8 !important;
   line-height: $icon-m-size *0.8;
@@ -132,11 +132,19 @@ button.detail-buy:hover{
 .btn-secondary:hover{
   background-color: $med-blue;
 }
+.btn-next-pre, .btn-next-pre:hover{
+  font-size: 1.3rem;
+  color: $font-c-w;
+  font-weight: $bold;
+}
 @mixin price{
   font-size: 1.2rem;
   font-weight: $bold;
   letter-spacing: -0.8px;
   z-index: 1046;
+}
+.prices{
+  font-size: 0.95rem;
 }
 .price{
   @include price;
