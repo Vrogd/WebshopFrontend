@@ -2,7 +2,9 @@ body {
   button {
     border-radius: 0 !important;
   }
-
+  h4{
+    font-size: 0.9rem;
+  }
   .border {
     outline: 1px solid $bg-grey !important;
     border: none;
@@ -94,6 +96,13 @@ body {
   }
   .bg-blue-medio{
     background-color: rgba($blue-medio, 1);
+  }
+  .bg-grey{
+    background-color: $bg-grey !important;
+  }
+  .foutmessage{
+    color: $red-light;
+    font-size: 0.7rem;
   }
 
   /* voor mobile als pagina te klein zodat menu er volidg opkomt*/

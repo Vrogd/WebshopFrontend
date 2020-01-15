@@ -37,12 +37,8 @@
     ;
     }
   }
-  #customcounter{
+  .customcounter{
     outline: none !important;
-    a:focus{
-      background-color: $red-light;
-      color: $font-c-w;
-    }
   }
   #getinfoshopping{
     span{
@@ -82,9 +78,6 @@
       }
     }
     #review,#vragen{
-      h4{
-      font-size: 0.8rem;
-       }
       h3.staff{
         color: $red-light;
       }

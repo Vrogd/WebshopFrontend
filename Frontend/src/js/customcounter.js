@@ -1,6 +1,7 @@
 $( document ).ready(function() {
-    $( function() {
-        let custom = $('#customcounter');
+
+    $( function counter() {
+        let custom = $('.customcounter');
         let min = parseInt(custom.children(':input').attr('data-minval'));
         let max = parseInt(custom.children(':input').attr('data-maxval'));
         let current = parseInt(custom.children(':input').attr('value'));
