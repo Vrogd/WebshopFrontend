@@ -52,7 +52,7 @@
     text-decoration: underline !important;
     font-weight: $semibold;
   }
-  #tabsproduct,#tabscart{
+  #tabsproduct,#tabscart,.card{
     .nav-item{
       a{
         background-color: $bg-grey;
@@ -80,7 +80,7 @@
         padding: 0.4rem 1.25rem !important;
       }
     }
-    #review,#vragen, #overzichtenproducten{
+    #review,#vragen, #overzichtenproducten,#Shipping , #Payment{
       h3.staff{
         color: $red-light;
       }

@@ -116,8 +116,9 @@ button.profiletab{
 .size:active, .size:focus {
   background-color: $red-light !important;
 }
-button.detail-buy{
+.detail-buy{
   @include button;
+  color: $font-c-w !important;
   background-color: $med-blue;
   font-weight: $semibold;
   border-radius: 5px !important;
@@ -133,7 +134,7 @@ button.detail-buy:hover{
   background-color: $med-blue;
 }
 .btn-next-pre, .btn-next-pre:hover{
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: $font-c-w;
   font-weight: $bold;
 }

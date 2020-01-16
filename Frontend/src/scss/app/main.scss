@@ -169,7 +169,7 @@ body{
       }
     }
     .news{
-      background-color: $blue-medio;
+      background:linear-gradient(rgba($med-blue, 0.8), rgba($med-blue, 0.8)) center, url($image-path +"/focus.png") no-repeat bottom;
       color: $font-c-w;
       form{
         input{
