@@ -90,7 +90,6 @@ button.blue-b{
 }
 .fea.active{
   background-color: $med-blue !important;
-  border-bottom: 2px outset $red-light;
 }
 button.profiletab{
   @include button;

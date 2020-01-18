@@ -81,6 +81,13 @@ body {
         line-height: 0.95rem;
         letter-spacing: -0.8px;
       }
+      //arrows switch zonder jquery te gebruiken
+      a[aria-expanded="true"] i:before{
+         content:" \f0d7" !important;
+      }
+      a[aria-expanded="false"] i:before{
+        content:"\f0da" !important;
+      }
     }
   }
 
