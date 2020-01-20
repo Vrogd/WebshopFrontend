@@ -80,40 +80,36 @@
         padding: 0.4rem 1.25rem !important;
       }
     }
-    #review,#vragen, #overzichtenproducten,#Shipping , #Payment{
-      h3.staff{
-        color: $red-light;
-        }
-        .shortinfo,.form-control ,.vraag{
-          background-color: lighten($bg-grey,8) !important;
-          border-radius: 5px;
-          .verifiedbuyer{
-            right: 0px;
-            top: 10px;
-            .fas{
-              font-size: 1.8rem;
-              line-height: 1rem;
-              color: $blue-medio;
-            }
-            .fa-check{
-              color: $font-c-w;
-              font-size: 0.8rem;
-            }
-          }
-        }
-        .writerev{
-          .Reviewlong,.Antwoordlong{
-            resize: none;
-          }
-          .starrr a {
-            font-size: 1rem;
-            cursor: pointer;
-            color: $dark-blue;
-          }
-        }
-    }
   }
 }
 .modal-open {
   overflow-y: scroll !important;
+}
+  h3.staff{
+    color: $red-light;
+  }
+  .shortinfo,.form-control ,.vraag{
+    background-color: lighten($bg-grey,8) !important;
+    border-radius: 5px;
+    .verifiedbuyer{
+      right: 0px;
+      top: 10px;
+      .fas{
+        font-size: 1.8rem;
+        line-height: 1rem;
+        color: $blue-medio;
+      }
+      .fa-check{
+        color: $font-c-w;
+        font-size: 0.8rem;
+      }
+    }
+  }
+.form-control-plaintext {
+  resize: none;
+}
+.starrr a {
+  font-size: 1rem;
+  cursor: pointer;
+  color: $dark-blue;
 }

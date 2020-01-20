@@ -172,10 +172,6 @@ body {
   .arrow-left{
     transform: rotate(180deg);
   }
-  #navbarToggleExternalprofile{
-    width: auto !important; // niet mogelijk om te switchen op brekpoints in boostrap
-    border-radius: 0 0 20px 20px !important;
-  }
 }
 @media (min-width: 768px) {
   .badge{
@@ -194,11 +190,6 @@ body {
   }
   .fixed-top{
     position: fixed;
-  }
-  #navbarToggleExternalprofile{
-    right: 10% !important;
-    left: unset !important;
-    background-color: rgba($dark-blue,0.8) !important;
   }
 }
 @media (min-width: 992px) {

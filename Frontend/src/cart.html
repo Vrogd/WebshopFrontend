@@ -40,7 +40,7 @@
                 <button class="navbar-toggler col-auto px-4 borderleft" type="button">
                     <i class="fas fa-heart icon"></i><span class="badge rounded-circle badge-light position-absolute">4</span>
                 </button>
-                <button class="navbar-toggler col-auto px-4 borderleft borderright" type="button">
+                <button class="navbar-toggler col-auto px-4 borderleft borderright" type="button" onclick="location.href='cart.html';">
                     <i class="fas fa-shopping-cart icon"></i><span class="badge rounded-circle badge-light position-absolute">2</span>
                 </button>
             </div>
@@ -118,7 +118,7 @@
                     </div>
                     <div class="row my-lg-0">
                         <i class="fas fa-mobile-alt icon-big text-center col-auto"></i>
-                        <div class="col my-auto"><p>954-699-2890</p></div>
+                        <div class="col my-auto"><a href="tel:954-699-2890">954-699-2890</a></div>
                     </div>
                     <div class="row my-lg-0 my-3">
                         <i class="fas fa-clock icon-big text-center col-auto"></i>
@@ -267,10 +267,10 @@
                 <div class="form-row mb-1">
                     <div class="col-12 col-md-10 mx-md-auto mx-1">
                         <h2 class="text-center bold">Leveringsadres</h2>
-                        <p class="alert alert-danger">Some text success or error</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-10 mx-md-auto mx-1 px-0">
+                <div class="col-12 col-md-10 mx-md-auto mx-1">
+                    <p class="alert alert-danger">Some text success or error</p>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputnaam">Naam</label>
@@ -331,7 +331,7 @@
                 </div>
                 <div class="col-12 col-md-10 mx-md-auto mx-1">
                     <div class="card border-0">
-                        <div class="card-body p-5">
+                        <div class="card-body px-0 py-3">
 
                             <ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
                                 <li class="nav-item">
@@ -358,7 +358,7 @@
                                             <div class="input-group">
                                                 <input type="text" class="form-control" name="cardNumber" id="cardNumber" placeholder="">
                                                 <div class="input-group-append">
-				                                    <span class="input-group-text text-muted">
+				                                    <span class="input-group-text text-muted border-0">
 					                                    <i class="fab fa-cc-visa"></i>
 				                                    </span>
                                                 </div>
@@ -463,6 +463,9 @@
                 <i class="fab fa-cc-visa icon-pay"></i>
             </div>
         </div>
+    </div>
+    <div class="row text-center justify-content-center">
+        <p class="m-0 my-1">© 2020 Steven Vroman</p>
     </div>
 </footer>
 </body>
