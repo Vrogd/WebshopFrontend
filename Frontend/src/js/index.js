@@ -1,11 +1,19 @@
 
 $( document ).ready(function() {
     $( function() {
-        $( "#slider-range" ).slider({
-            range: true,
-            min: 599,
-            max: 10000,
-            values: [ 600, 6000 ],
+    var w = $(window).width();
+        if (w < 768) {
+            //wanner mobile collapsed
+            $('.panel-collapse').removeClass('show');
+            $('.panel-collapse').addClass('collapse');
+        }
+        });
+        $( function() {
+            $( "#slider-range" ).slider({
+                range: true,
+                min: 599,
+                max: 10000,
+                values: [ 600, 6000 ],
             slide: function( event, ui ) {
                 $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
             }
