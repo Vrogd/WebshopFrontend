@@ -23,11 +23,6 @@ body{
   font-size: $def-font-size;
   box-sizing: border-box;
   color: $dark-blue;
-  .panel-collapse ,input[type="text"]{
-    label{
-      font-weight: $medium;
-    }
-  }
   #nav{
     max-width: $width-lay;
     min-width: $min-width;

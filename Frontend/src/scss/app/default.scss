@@ -97,7 +97,11 @@ body {
     outline: none !important;
     box-shadow: none !important;
   }
-
+  .panel-collapse ,input[type="text"]{
+    label{
+      font-weight: $medium;
+    }
+  }
   .bg-med-blue {
     background-color: rgba($med-blue, 0.95);
   }

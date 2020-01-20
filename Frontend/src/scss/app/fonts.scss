@@ -3,7 +3,7 @@ $fontface-path:'../fonts';
 
 @font-face {
   font-family: 'Titillium Web';
-  @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,900&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900&display=swap');
 }
 $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
