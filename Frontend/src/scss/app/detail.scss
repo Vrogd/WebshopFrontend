@@ -39,9 +39,12 @@
   }
   .customcounter{
     outline: none !important;
-      a:focus{
-        color: $red-light;
-      }
+    a{
+      color: $dark-blue;
+    }
+    a:focus{
+      color: $red-light;
+    }
   }
   #getinfoshopping{
     span{
@@ -55,6 +58,7 @@
   #tabsproduct,#tabscart,.card{
     .nav-item{
       a{
+        color: $font-c-g;
         background-color: $bg-grey;
       }
     }
@@ -112,4 +116,10 @@
   font-size: 1rem;
   cursor: pointer;
   color: $dark-blue;
+}
+#contact{
+  p>a , p{
+    color: $dark-blue;
+    font-size: 0.9rem;
+  }
 }
