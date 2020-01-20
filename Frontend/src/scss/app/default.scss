@@ -47,9 +47,9 @@ body {
   }
 
   /* lists*/
-  a {
+  p, a , a:link, a:visited, a:hover{
     text-decoration: none !important;
-    color: $font-c-g;
+    color: $dark-blue;
   }
 
   ul {
