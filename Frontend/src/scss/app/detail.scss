@@ -123,3 +123,4 @@
     font-size: 0.9rem;
   }
 }
+.navbar-collapse { max-height: calc(100vh - 60px); overflow-y: auto; }

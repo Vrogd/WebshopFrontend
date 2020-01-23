@@ -68,7 +68,7 @@ $( document ).ready(function() {
         $('#postvraag').text('Post een vraag');
         $('.Antwoordlong').val("");
     });
-    $(window).resize(function(){location.reload();});
+    //$(window).resize(function(){location.reload();}); buggs on mobile
     $('.cont').on("click", function (event) {
         tab = $(event.target).parents('.tab-pane').next().attr("id");
         $('a[href="#' + tab + '"]').tab('show');
